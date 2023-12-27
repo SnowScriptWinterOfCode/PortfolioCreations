@@ -9,6 +9,12 @@
 
 This is a portfolio website through which one can showcase and define their professional identity, highlighting projects, skills, and experiences in a clean and personalized format.
 
+## Maintainers
+@i-am-SnehaChauhan and @Nitya-Pasrija 
+
+Please reach out to the maintainers if you get stuck or wish to report someone.
+
+
 ## Tech stack used
 * HTML
 * CSS
@@ -19,17 +25,17 @@ This is a portfolio website through which one can showcase and define their prof
 - Take a look at the Existing Issues of your project and find one that interests you or create your own Issues!
 - Tag the repository maintainers or issue creators to assign that issue to you.
 - Wait for the Issue to be assigned to you after which you can start working on it.
-- Fork the Repo and create a Branch for any Issue that you are working upon.
-- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
-- Once your PR is approved, you changes will be merged into the project. 
+- Fork the Repo and create a Branch for any Issue you are working on.
+- Create a Pull Request which will be promptly reviewed and suggestions will be added to improve it.
+- Once your PR is approved, your changes will be merged into the project. 
 - Add Screenshots to help us know what this Script is all about.
-- Repository specific contribution information is in the respective READMEs of each repo.
+- Repository-specific contribution information is in the respective READMEs of each repo.
 - Do not abuse and/or use bad language. Ensure you don't insult anyone. Be respectful and inclusive.
 - Please mention your full name on your GitHub handle to be eligible for prizes.
 
 
-You can take up any of the existing issues or create a new issue to to contribute any of your own projects!<br/> 
-Contribution period ends: 26 January 2024
+You can take up any of the existing issues or create a new issue to contribute!<br/> 
+Contribution period ends: 28 January 2024
 
 
 ## How to get started?

@@ -10,7 +10,8 @@
 This is a portfolio website through which one can showcase and define their professional identity, highlighting projects, skills, and experiences in a clean and personalized format.
 
 ## Maintainers
-@i-am-SnehaChauhan and @Nitya-Pasrija 
+
+[@i-am-SnehaChauhan](https://github.com/i-am-SnehaChauhan) and [@Nitya-Pasrija](https://github.com/Nitya-Pasrija)
 
 Please reach out to the maintainers if you get stuck or wish to report someone.
 

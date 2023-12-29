@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -39,7 +42,7 @@ nav a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -54,7 +57,7 @@ header h1 {
 }
 
 header p {
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 .about-me,
@@ -63,15 +66,63 @@ header p {
     background-color: #f4f4f4;
     padding: 40px 0;
 }
+#projects .container {
+        border: 10px;
+        border-radius: 1%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
+        
+}   
 
+.round{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border: 1px ridge rgba(25, 16, 16, 0.364);
+    border-radius: 50% ;
+    box-shadow: 0 0 6px;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+}
+.project h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: larger;
+}
+#project-heading{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: larger;
+        text-align: center;
+        margin: 0 auto; 
+        max-width: 80%;  
+}
+p strong {
+    font-weight: bold;
+  }
+.box{
+  display:flex;
+  padding: 1%;
+  padding-left: 8%;
+ 
+}
 section h2 {
     text-align: center;
 }
 
+.round img {
+    max-width: 80%;
+    max-height: 80%; 
+    display:block;
+    
+  }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 15px; 
+    width:80%;
+    font-family: 'Times New Roman', Times, serif;
 }
+ .project-left{
+    margin-right:4%;
+ }   
 
 .project button {
     display: inline-block;
@@ -83,14 +134,15 @@ section h2 {
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color black 0.3s ease;
+    margin-bottom: 1rem;
 }
 .project button a{
     text-decoration: none;
     color: #fff;
 }
 .project button:hover {
-    background-color: #2980b9;
+    background-color: #082b42;
 }
 
 footer {
@@ -99,3 +151,36 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+@media screen and (max-width: 831px) {
+    .box {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .project {
+      width: 100%;
+    }
+  
+    .project-left,
+    .project-right {
+      margin-right: 0;
+      width: 100%;
+    }
+  
+    #project-heading {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Media query for very small screens or mobile */
+  @media screen and (max-width: 480px) {
+    .round {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .project button {
+      font-size: 12px;
+    }
+  }

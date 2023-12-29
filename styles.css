@@ -130,12 +130,14 @@ section h2 {
     margin-bottom: 5px;
     margin-top: 10px;
     border-radius: 10px 0 0 10px;
+    
 }
 .box2{
     flex: 30%;
     margin-bottom: 5px;
     margin-right: 20px;
     margin-top: 10px;
+    
 }
 
 .box-heading h2{

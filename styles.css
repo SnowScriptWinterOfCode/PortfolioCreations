@@ -5,6 +5,12 @@ body {
     box-sizing: border-box;
 }
 
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
 /*Style anchor tags*/
 a{
     text-decoration: none;

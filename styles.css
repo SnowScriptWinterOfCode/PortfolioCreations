@@ -77,9 +77,9 @@ header p {
     display: flex;
     width: 80px;
     height: 80px;
-    border: 1px ridge rgba(25, 16, 16, 0.364);
+    border: 1px ridge;
     border-radius: 50% ;
-    box-shadow: 0 0 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.295);
     overflow:hidden;
     justify-content: center;
     align-items: center;

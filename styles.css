@@ -68,7 +68,7 @@ header p {
 
 /*Hero Section-------------------------------------------------------------------------------------------------*/
 .hero-section{
-    background-image: url("bc.jpg");
+    background-image: url("img_hero.jpg");
     background-size:cover;
     height: 200px;
     display: flex;

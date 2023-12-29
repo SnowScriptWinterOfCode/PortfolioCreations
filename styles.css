@@ -65,6 +65,56 @@ header p {
 
 /*Header styling end==========================================================================================================================*/
 
+
+/*Hero Section-------------------------------------------------------------------------------------------------*/
+.hero-section{
+    background-image: url("bc.jpg");
+    background-size:cover;
+    height: 200px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start; /* Center horizontally */
+    align-items: center; /* Align to the top */
+}
+
+.hero-intro{
+    text-align: center;
+    
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 10000px; /* Adjust this value to control the spacing between list items */
+    margin-top: auto; /* Add margin to push the list down from the top */
+    justify-content: center;
+}
+
+.socials li {
+    display: inline;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    
+}
+
+/*Hero para*/
+.hero-para{
+    
+    font-size: small;
+    text-align: center;
+    margin: 10 px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color to yellow, adjust as needed */
+    color: black;
+}
+/*Hero Section End----------------------------------------------------------------------------------------------*/
+
+
 /* Section styling start====================================================================================================================*/
 .about-me,
 .projects,

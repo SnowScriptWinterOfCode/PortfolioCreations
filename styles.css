@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: black;
+    
 }
 
 /* Styling nav tags start==========================================================================================================================*/
@@ -88,6 +89,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 10px;
     color: black;
+    text-align: center;
 }
 
 .hero-socials {
@@ -95,14 +97,40 @@ h2{
     gap: 10000px; /* Adjust this value to control the spacing between list items */
     margin-top: auto; /* Add margin to push the list down from the top */
     justify-content: center;
+    background-color: #f5f5f5;
 }
 
 .socials li {
-    display: inline;
+    display: inline-block;
     margin-bottom: 30px;
     margin-right: 20px;
     
 }
+
+.socials a {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.fa-brands,
+.fa-solid {
+    color: black;
+    font-size: 24px;
+}
+
 
 /*Hero para*/
 .hero-para{

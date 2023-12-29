@@ -75,6 +75,7 @@ header p {
 /* Section styling start====================================================================================================================*/
 .about-me,
 .projects,
+.certifications,
 .contact {
     background-color: #f4f4f4;
     padding: 40px 0;
@@ -163,8 +164,7 @@ button:hover{
 
 .img6-box2{
     background-color: white;
-    background-image: url('certifications.png');
-    
+    background-image: url('certifications.png');    
     height: 100%;
     width: 100%;
     background-size: cover;

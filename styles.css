@@ -99,3 +99,129 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* style given to skill section */
+/* Icon library - Add a link to Font Awesome or any other icon library */
+/* Example: Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Skills section styling */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #0277bd; /* Darker blue for headers */
+}
+
+.skill-category {
+    margin-top: 40px;
+}
+
+.skill-category h3 {
+    color: #01579b; /* Dark blue for category headers */
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill i {
+    font-size: 40px;
+    color: #0277bd;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.skill span {
+    color: #01579b;
+    font-weight: bold;
+}
+
+/* design of skills section */
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+.skills {
+    background-color: #e0f7fa; 
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #0277bd; 
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    margin-top: 40px;
+}
+
+.skill-category h3 {
+    color: #01579b; 
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.skill {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 40px;
+    color: #0277bd; 
+    margin-bottom: 10px;
+}
+
+.skill span {
+    color: #01579b; 
+    font-weight: bold;
+    display: block;
+}
+

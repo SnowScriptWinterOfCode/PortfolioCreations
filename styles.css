@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
 /* Pre Loader  */
@@ -15,230 +15,227 @@
   z-index: 10000;
 }
 
+/* Navbar  */
+
 nav {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px 0;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #2980b9;
+  color: #2980b9;
 }
 
+/* About Section  */
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px 0;
-    height: 40vh;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px 0;
+  height: 40vh;
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
 header p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .about-me,
 .projects,
 .contact {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 section h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .project {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .project button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .project button a{
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 .project button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
 
 /* Experience */
 
 .main {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-    display: grid;
-    place-items: center;
-    background-color: #333;
-    color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  display: grid;
+  place-items: center;
+  background-color: #333;
+  color: #fff;
 }
 
 .main .heading {
-    font-size: 27px;
-    font-weight: 600;
-    color: #ffff00;
-    position: relative;
-    margin-bottom: 80px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #ffff00;
+  position: relative;
+  margin-bottom: 80px;
 }
 
 .heading::after {
-    position: absolute;
-    content: ' ';
-    width: 100px;
-    height: 2px;
-    left: 50%;
-    bottom: -8px;
-    background-image: linear-gradient(to right, #ffff00, #fdfd89);
-    transform: translateX(-50%);
+  position: absolute;
+  content: ' ';
+  width: 100px;
+  height: 2px;
+  left: 50%;
+  bottom: -8px;
+  background-image: linear-gradient(to right, #ffff00, #fdfd89);
+  transform: translateX(-50%);
 }
 
 .exp {
-    width: 70%;
-    height: auto;
-    position: relative;
+  width: 70%;
+  height: auto;
+  position: relative;
 }
 
 .exp::after {
-    position: absolute;
-    content: ' ';
-    width: 2px;
-    height: 100%;
-    background-image: linear-gradient(to bottom, #ffff00, #fdfd89);
+  position: absolute;
+  content: ' ';
+  width: 2px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #ffff00, #fdfd89);
 }
 
 .exp ul {
-    list-style: none;
+  list-style: none;
 }
 
 .exp ul li {
-    width: 50%;
-    height: auto;
-    padding: 15px 20px;
-    box-shadow: 1px 1px 25px #000;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 99;
+  width: 50%;
+  height: auto;
+  padding: 15px 20px;
+  box-shadow: 1px 1px 25px #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 99;
 }
 
 .exp ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(-20px);
-    text-align: right;
+  float: left;
+  clear: right;
+  transform: translateX(-20px);
+  text-align: right;
 }
 
 .exp ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(20px);
+  float: right;
+  clear: left;
+  transform: translateX(20px);
+}
+
+.exp ul li:nth-child(4) {
+  margin-bottom: 0;
 }
 
 .exp ul li .title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffff00;
-    margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffff00;
+  margin-bottom: 6px;
 }
 
 .exp ul li p {
-    font-size: 15px;
-    color: #fdfd89;
-    margin: 5px 0;
-    line-height: 23px;
+  font-size: 15px;
+  color: #fdfd89;
+  margin: 5px 0;
+  line-height: 23px;
 }
 
 ul li a {
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
 }
 
 .exp ul li .circle {
-    width: 20px;
-    height: 20px;
-    background-color: #ffff00;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffff00;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
 }
 
 ul li .date {
-    position: absolute;
-    top: -45px;
-    width: 135px;
-    height: 35px;
-    border-radius: 10px;
-    color: #000;
-    background-image: linear-gradient(to right, #ffff00, #fdfd89);
-    display: grid;
-    place-items: center;
-    font-size: 16px;
-    font-weight: 600;
+  position: absolute;
+  top: -45px;
+  width: 135px;
+  height: 35px;
+  border-radius: 10px;
+  color: #000;
+  background-image: linear-gradient(to right, #ffff00, #fdfd89);
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 ul li:nth-child(odd) .date {
-    right: 20px;
+  right: 20px;
 }
 
 ul li:nth-child(odd) .circle {
-    right: -21px;
-    transform: translate(50%, -50%);
+  right: -21px;
+  transform: translate(50%, -50%);
 }
 
 ul li:nth-child(even) .circle {
-    left: -21px;
-    transform: translate(-50%, -50%);
+  left: -21px;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -277,19 +274,29 @@ ul li:nth-child(even) .circle {
     }
 }
 
+/* Download CV Button  */
+
 .btn-download {
-    background-image: linear-gradient(to right, #fdfd89, #ffff00);
-    font-size: 15px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #000;
-    letter-spacing: 0.3px;
-    padding: 10px 20px;
-    border-radius: 20px;
-    position: fixed;
-    bottom: 27px;
-    left: calc(50% - 86px);
-    z-index: 100;
-    text-decoration: none;
-    box-shadow: 0 6px 23px #000;
+  background-image: linear-gradient(to right, #fdfd89, #ffff00);
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 0.3px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 27px;
+  left: calc(50% - 86px);
+  z-index: 100;
+  text-decoration: none;
+  box-shadow: 0 6px 23px #000;
+}
+
+/* Footer  */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
 }

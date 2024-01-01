@@ -1,39 +1,136 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-    /* nav {
-        background-color: #3498db;
-        color: #fff;
-        padding: 10px 0;
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #3498db;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .contain {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .contain::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #3498db;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: -81px;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    border: 2px solid #2980b9;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
     }
-
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
+    
+    /* Full-width containers */
+    .contain {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
     }
-
-    nav li {
-        margin-right: 20px;
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .contain::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
     }
-
-    nav a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        font-size: 16px;
-        transition: color 0.3s ease;
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
     }
-
-    nav a:hover {
-        color: #2980b9;
-    } */
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
 
 
 
@@ -44,7 +141,7 @@ body {
 	color: #fff;
 }
 .navbar-mainbg{
-	background-color: #5161ce;
+	background-color: #3498DB;
 	padding: 0px;
 }
 #navbarSupportedContent{
@@ -73,7 +170,7 @@ body {
     position: relative;
 }
 #navbarSupportedContent>ul>li.active>a{
-	color: #5161ce;
+	color: #3498DB;
 	background-color: transparent;
 	transition: all 0.7s;
 }
@@ -96,7 +193,7 @@ body {
 .hori-selector{
 	display:inline-block;
 	position:absolute;
-	height: 90%;
+	height: 100%;
 	top: 0px;
 	left: 0px;
 	transition-duration:0.6s;
@@ -106,34 +203,34 @@ body {
 	border-top-right-radius: 15px;
 	margin-top: 10px;
 }
-.hori-selector .right,
-.hori-selector .left{
+.hori-selector .rightSide,
+.hori-selector .leftSide{
 	position: absolute;
 	width: 25px;
 	height: 25px;
 	background-color: #fff;
 	bottom: 10px;
 }
-.hori-selector .right{
+.hori-selector .rightSide{
 	right: -25px;
 }
-.hori-selector .left{
+.hori-selector .leftSide{
 	left: -25px;
 }
-.hori-selector .right:before,
-.hori-selector .left:before{
+.hori-selector .rightSide:before,
+.hori-selector .leftSide:before{
 	content: '';
     position: absolute;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #5161ce;
+    background-color: #3498DB;
 }
-.hori-selector .right:before{
+.hori-selector .rightSide:before{
 	bottom: 0;
     right: -25px;
 }
-.hori-selector .left:before{
+.hori-selector .leftSide:before{
 	bottom: 0;
     left: -25px;
 }
@@ -173,22 +270,22 @@ body {
 		border-top-left-radius: 25px;
 		border-bottom-left-radius: 25px;
 	}
-	.hori-selector .left,
-	.hori-selector .right{
+	.hori-selector .leftSide,
+	.hori-selector .rightSide{
 		right: 10px;
 	}
-	.hori-selector .left{
+	.hori-selector .leftSide{
 		top: -25px;
 		left: auto;
 	}
-	.hori-selector .right{
+	.hori-selector .rightSide{
 		bottom: -25px;
 	}
-	.hori-selector .left:before{
+	.hori-selector .leftSide:before{
 		left: -25px;
 		top: -25px;
 	}
-	.hori-selector .right:before{
+	.hori-selector .rightSide:before{
 		bottom: -25px;
 		left: -25px;
 	}
@@ -258,3 +355,30 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #2980b9;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover {
+    filter: brightness(90%);
+  }  

@@ -253,6 +253,85 @@ footer {
     filter: brightness(90%);
   }  
 
+/* FAQ section styling */
+.faq {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: left; /* Align content to the left */
+    border-radius: 15px; /* Increase border-radius for the FAQ section */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+details {
+    margin-bottom: 20px;
+    border-radius: 15px; /* Increase border-radius for the details */
+    overflow: hidden;
+}
+
+summary {
+    background-color: #0277bd;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:focus {
+    outline: none;
+}
+
+details p {
+    background-color: #fff;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 15px 15px; /* Increase border-radius for the paragraph */
+    text-align: left;
+}
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #2980b9;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover {
+    filter: brightness(90%);
+  }  
+
 /* style given to skill section */
 /* Icon library - Add a link to Font Awesome or any other icon library */
 /* Example: Font Awesome */

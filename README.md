@@ -13,6 +13,9 @@ This is a portfolio website through which one can showcase and define their prof
 
 [@i-am-SnehaChauhan](https://github.com/i-am-SnehaChauhan) and [@Nitya-Pasrija](https://github.com/Nitya-Pasrija)
 
+## Reviewers
+[@ayushichoudhary-19](https://github.com/ayushichoudhary-19)
+
 Please reach out to the maintainers if you get stuck or wish to report someone.
 
 

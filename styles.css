@@ -295,7 +295,7 @@ summary:focus {
     outline: none;
 }
 
-p {
+details p {
     background-color: #fff;
     padding: 15px;
     margin: 0;

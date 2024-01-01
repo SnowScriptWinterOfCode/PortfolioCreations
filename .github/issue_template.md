@@ -1,8 +1,3 @@
----
-name: Issue Template
-about: Describe the purpose of this issue.
-
----
 
 ## Issue Description
 <!-- Clearly describe the issue or feature request, providing as much detail as possible. -->

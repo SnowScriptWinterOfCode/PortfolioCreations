@@ -1,3 +1,4 @@
+# .github/workflows/greetings.yml
 name: Greetings
 
 on: [pull_request_target, issues]
@@ -9,8 +10,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.TOKEN }}
-        issue-message: "Woohoo! Your first ever issue with us in this repository has been created🎊🎊!!"
-        pr-message: "Perfection! Advancing through the open source world!🎊🎊 :) Please be patient while our maintainers and reviewers check the code."
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.TOKEN }}
+          issue-message: "Congratulations! Your first ever issue with us in this repository has been created. Please wait while it gets assigned to you."

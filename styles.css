@@ -266,3 +266,20 @@ ul li:nth-child(even) .circle {
         transform: translate(-50%, -50%);
     }
 }
+
+.btn-download {
+    background-image: linear-gradient(to right, #fdfd89, #ffff00);
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+    letter-spacing: 0.3px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 27px;
+    left: calc(50% - 86px);
+    z-index: 100;
+    text-decoration: none;
+    box-shadow: 0 6px 23px #000;
+}

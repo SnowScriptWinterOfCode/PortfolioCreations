@@ -17,11 +17,5 @@
 ## Additional Context
 <!-- Add any other context about the issue here. -->
 
-## Environment (if applicable)
-- OS:
-- Browser:
-- Version (if applicable):
-
----
 
 ⚠️ **Warning**: Before submitting, please check for existing issues to avoid duplicates. If you find a related issue, consider adding your insights or upvoting the existing one. Thank you!

@@ -252,3 +252,55 @@ footer {
   .scroll-up-btn:hover {
     filter: brightness(90%);
   }  
+
+/* FAQ section styling */
+.faq {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: left; /* Align content to the left */
+    border-radius: 15px; /* Increase border-radius for the FAQ section */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+details {
+    margin-bottom: 20px;
+    border-radius: 15px; /* Increase border-radius for the details */
+    overflow: hidden;
+}
+
+summary {
+    background-color: #0277bd;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:focus {
+    outline: none;
+}
+
+p {
+    background-color: #fff;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 15px 15px; /* Increase border-radius for the paragraph */
+    text-align: left;
+}

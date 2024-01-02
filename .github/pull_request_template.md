@@ -13,3 +13,5 @@ Tag the issue(s) addressed or closed by this pull request.
 ### Additional Notes
 Add any additional information that might be helpful for reviewers or maintainers.
 
+**Note for Submitters:**
+Before submitting this pull request, please ensure that you have pulled the latest changes from the repository (`git pull`). This helps prevent conflicts and ensures that your changes are based on the most recent codebase.

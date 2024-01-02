@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">      
-    <link rel="stylesheet" href="styles.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="script.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     <link rel="stylesheet" href="styles.css">
+
     <title>Your Name - Portfolio</title>
 </head>
 <body>
@@ -17,19 +16,35 @@
 </div>
 
 <!-- Navigation Bar -->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skill_section">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#faq_section">FAQ</a></li>
-            <li><a href="#contact">Contact</a></li>
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <div class="hori-selector"><div class="leftSide"></div><div class="rightSide"></div></div>
+            <li class="nav-item active">
+                <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#skill_section">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="#faq_section">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
         </ul>
     </div>
 </nav>
-
 <!-- Header -->
 <header>
     <div class="container">
@@ -251,6 +266,10 @@
         <p>&copy; 2023 Your Name. All rights reserved.</p>
     </div>
 </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script> 
 
 </body>
 </html>

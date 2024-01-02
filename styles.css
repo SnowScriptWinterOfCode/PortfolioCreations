@@ -1,6 +1,10 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
 html{
     scroll-behavior: smooth;
 }
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -8,6 +12,8 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -161,11 +167,10 @@ nav a:hover {
     color: #2980b9;
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -180,7 +185,7 @@ header h1 {
 }
 
 header p {
-    margin: 5px 0;
+    margin: 4px 0;
 }
 
 .about-me,
@@ -189,42 +194,88 @@ header p {
     background-color: #f4f4f4;
     padding: 40px 0;
 }
-
-section h2 {
-    text-align: center;
+.box{
+  display: flex;
 }
 
+#projects {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
 
 .project {
-    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    margin:2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform background-color 0.2s ease-in-out;
+  }
+  
+  .project:hover {
+      transform: scale(1.05);
+      background-color: #f6f6f6;
+  }
+
+
+
+@media screen and (max-width: 918px) {
+  .box {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+      flex: 0 0 calc(100% - 20px); 
+      max-width: calc(100% - 20px); 
+      
+  }
+}
+
+.project h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: larger;
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 10px;
 }
 
 .project button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
+    display: block;
+    margin: 10px;
+    margin-left: 0;
+    padding: 8px 16px;
     background-color: #3498db;
-    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.project button a{
-    text-decoration: none;
-    color: #fff;
-}
 .project button:hover {
-    background-color: #2980b9;
+  background-color: #2980b9;
 }
-
+.project button a{
+  text-decoration: none;
+  color: #fff;
+}
+.project .buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
+
 .scroll-up-btn {
     position: fixed;
     height: 45px;
@@ -304,3 +355,4 @@ details p {
     border-radius: 0 0 15px 15px; /* Increase border-radius for the paragraph */
     text-align: left;
 }
+

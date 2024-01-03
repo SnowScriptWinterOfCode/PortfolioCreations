@@ -94,3 +94,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+let scrollContainer = document.querySelector(".gallery"); 
+        let backBtn = document.getElementById("backbutton");
+        let nextBtn = document.getElementById("nextbutton");
+
+        scrollContainer.addEventListener("wheel", (evt)=>{
+            // evt.preventDefault();
+            scrollContainer.scrollleft += evt.deltaY;
+        });
+
+        nextBtn.addEventListener("click", ()=>{
+
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 370;
+        });
+        backBtn.addEventListener("click", ()=>{
+
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 370;
+        });
+

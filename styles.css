@@ -1204,3 +1204,15 @@ blockquote {
       color: #fff; /* Change the color of the icon */
   }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  border-radius: 6px;
+}

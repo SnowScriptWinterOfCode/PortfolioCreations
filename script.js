@@ -114,3 +114,13 @@ let scrollContainer = document.querySelector(".gallery");
             scrollContainer.scrollLeft -= 370;
         });
 
+		function displayImage(input) {
+            var file = input.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('uploadedImage').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        }

@@ -12,7 +12,33 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+#uploadContainer {
+  position: relative;
+}
 
+#circularRegion {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin:0% -6% auto;
+
+}
+
+#uploadedImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input[type="file"] {
+  opacity: 0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  cursor: pointer;
+}
 
 
 .timeline {

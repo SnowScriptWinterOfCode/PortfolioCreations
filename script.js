@@ -125,10 +125,8 @@ let scrollContainer = document.querySelector(".gallery");
                 reader.readAsDataURL(file);
             }
         }
-=======
 
-
-		//testimonial slider
+//testimonial slider
 		// JavaScript for sliding through testimonials
 const slider = document.querySelector('.testimonial-slider');
 

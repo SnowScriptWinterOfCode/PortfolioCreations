@@ -55,7 +55,15 @@
         <p>Hey there👋 !</p>
         <h1> I am &lt;Your Name&gt;</h1>
     </div>
+    <!--profile image-->
+<div id="uploadContainer">
+    <label for="imageUpload" id="circularRegion">
+        <img id="uploadedImage" src="placeholder.png" alt="Uploaded Image">
+    </label>
+    <input type="file" id="imageUpload" accept="image/*" onchange="displayImage(this)">
+</div>
 </header>
+
 
 <!-- About Me -->
 <section id="about" class="about-me">

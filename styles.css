@@ -514,8 +514,12 @@ header p {
       transform: scale(1.08);
       background-color: #f6f6f6;
   }
-
-
+.testimonial-card:hover {
+  transform: scale(1.08);
+  background-color: #007bffe0;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
 
 @media screen and (max-width: 918px) {
   .box {
@@ -697,7 +701,12 @@ header p {
       transform: scale(1.05);
       background-color: #f6f6f6;
   }
-
+  .testimonial-card:hover {
+    transform: scale(1.05);
+    background-color: #007bffe0;
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
 
 
 @media screen and (max-width: 918px) {
@@ -1229,7 +1238,10 @@ blockquote {
       font-size: 36px;
       color: #fff; /* Change the color of the icon */
   }
-
+  .testimonial-info .icon span:hover {
+    transform: scale(1.2); /* Increase the size on hover */
+    color: #ff7f50; /* Change the color on hover */
+}
 ::-webkit-scrollbar {
   width: 12px;
 }

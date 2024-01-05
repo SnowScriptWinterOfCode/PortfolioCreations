@@ -638,7 +638,7 @@ details p {
       background-color: #f6f6f6;
   }
 
-
+  
 
 @media screen and (max-width: 918px) {
   .box {
@@ -1192,4 +1192,9 @@ blockquote {
 ::-webkit-scrollbar-thumb {
   background-color: #3498db;
   border-radius: 6px;
+}
+
+/* contact-item */
+.contact-item{
+ display:flex;
 }

@@ -1124,3 +1124,109 @@ h2 {
   transform: scale(1.08);
 }
 
+/* testimonials */
+
+
+
+
+.testimonial-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+}
+
+.testimonial-card {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 300px;
+  background-color:#137494; /* Very light blue color */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   color: white; /* Text color set to white */
+}
+
+
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #007bffe0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.text {
+  text-align: left;
+  
+}
+
+     /* CSS for circular icons */
+     .testimonial-info .icon {
+      width: 60px; /* Adjust size as needed */
+      height: 60px; /* Same as width for a perfect circle */
+      border-radius: 50%; /* Makes it circular */
+      background-color: #ccc; /* Background color of the circle */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+  }
+
+  /* Adjust the emoji size and color */
+  .testimonial-info .icon span {
+      font-size: 36px;
+      color: #fff; /* Change the color of the icon */
+  }
+

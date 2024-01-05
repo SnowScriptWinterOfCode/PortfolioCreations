@@ -454,20 +454,21 @@ button a:hover{
 }
 
 .project {
-  overflow: hidden;
-  background-color: #fff;
-  padding: 20px;
-  margin: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  transition: transform background-color 0.2s ease-in-out;
-}
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px;
+    margin:2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform background-color 0.2s ease-in-out;
+  }
+  
+  .project:hover {
 
-.project:hover {
-  transform: scale(1.05);
-  background-color: #f6f6f6;
-}
+      transform: scale(1.05);
+      background-color: #f6f6f6;
+  }
 
 
 
@@ -575,36 +576,60 @@ h2 {
 }
 
 details {
-  margin-bottom: 20px;
-  border-radius: 15px;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  background: white;
+  transition: max-height 400ms ease-out;
+  max-height: 4rem; 
   overflow: hidden;
+  border-radius: 15px;
 }
 
 summary {
-  background-color: #0277bd;
+  display: block; 
+}
+
+input {
+  display: none; 
+}
+
+label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  background:  #0277bd;
   color: #fff;
-  padding: 15px 20px;
-  font-size: 1em;
+  height: 4rem;
+}
+
+label:hover {
   cursor: pointer;
-  outline: none;
 }
 
-summary::-webkit-details-marker {
-  display: none;
+label::before {
+  content: "⏵";
+  font-size: 1.5rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  transition: rotate 200ms 400ms ease-out;
 }
 
-summary:focus {
-  outline: none;
+div.faq-content {
+  padding: 0 10px;
 }
 
-details p {
-  background-color: #fff;
-  padding: 15px;
-  margin: 0;
-  border: 1px solid #ddd;
-  border-top: none;
-  border-radius: 0 0 15px 15px;
-  text-align: left;
+input:checked + details,
+details:has(input:checked) {
+  max-height: 800px;
+}
+input:checked + details label::before,
+details:has(input:checked) label::before {
+  rotate: 90deg;
+  transition: rotate 200ms ease-out;
 }
 
 .about-me,
@@ -690,86 +715,32 @@ details p {
 }
 
 .scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: #2980b9;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.scroll-up-btn:hover {
-  filter: brightness(90%);
-}
-
-/* FAQ section styling */
-.faq {
-  background-color: #f5f5f5;
-  padding: 50px 0;
-  text-align: left;
-  border-radius: 15px;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #333;
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-details {
-  margin-bottom: 20px;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-summary {
-  background-color: #0277bd;
-  color: #fff;
-  padding: 15px 20px;
-  font-size: 1em;
-  cursor: pointer;
-  outline: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary:focus {
-  outline: none;
-}
-
-details p {
-  background-color: #fff;
-  padding: 15px;
-  margin: 0;
-  border: 1px solid #ddd;
-  border-top: none;
-  border-radius: 0 0 15px 15px;
-  text-align: left;
-}
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #2980b9;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover {
+    filter: brightness(90%);
+  }
 
 .scroll-up-btn {
   position: fixed;
@@ -1040,6 +1011,7 @@ h2 {
 
 .gallery::-webkit-scrollbar {
   display: none;
+  color:blue;
 }
 
 .gallery div {

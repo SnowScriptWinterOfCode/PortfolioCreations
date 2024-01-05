@@ -1,136 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
     <title>Your Name - Portfolio</title>
 </head>
+
 <body>
 
-<!-- Scroll-to-top button -->
-<div class="scroll-up-btn">
-    <i class="fas fa-angle-up"></i>
-</div>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-custom navbar-mainbg">
-    <a class="navbar-brand navbar-logo" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-bars text-white"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <div class="hori-selector"><div class="leftSide"></div><div class="rightSide"></div></div>
-            <li class="nav-item active">
-                <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#skill_section">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#projects">Projects</a>
-            </li>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#testimonials">Testimonials</a>
-        </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="#faq_section">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
+    <!-- Scroll-to-top button -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-</nav>
-<!-- Header -->
-<header>
-    <div class="container">
-        <p>Hey there👋 !</p>
-        <h1> I am &lt;Your Name&gt;</h1>
-    </div>
-    <!--profile image-->
-<div id="uploadContainer">
-    <label for="imageUpload" id="circularRegion">
-        <img id="uploadedImage" src="placeholder.png" alt="Uploaded Image">
-    </label>
-    <input type="file" id="imageUpload" accept="image/*" onchange="displayImage(this)">
-</div>
-</header>
 
-
-<!-- About Me -->
-<section id="about" class="about-me">
-    <div class="container">
-        <h1>About Me</h1>
-        <p>A passionate web developer currently in my second year at IGDTUW. My journey in the world of technology began with a deep curiosity for how things work on the web.
-            In my courses at IGDTUW, I've gained a solid foundation in programming languages like HTML, CSS, and JavaScript. I'm enthusiastic about creating responsive and visually appealing websites that not only meet functional requirements but also deliver a delightful user experience.
-            My interest in web development extends beyond the classroom. I actively participate in coding competitions, hackathons, and collaborative projects, continuously enhancing my skills and staying abreast of the latest industry trends.</p>
-            As a second-year student, I look forward to further expanding my knowledge, tackling challenging projects, and contributing to the dynamic field of web development. Let's connect and explore the possibilities together!</p>
-    </div>
-</section>
-
-<!-- Skills section -->
-<section id="skill_section" class="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <!-- Frontend -->
-        <div class="skill-category">
-            <h3>Frontend Development</h3>
-            <div class="skills-list">
-                <div class="skill">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <span>HTML5</span>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector">
+                    <div class="leftSide"></div>
+                    <div class="rightSide"></div>
                 </div>
-                <div class="skill">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <span>CSS3</span>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <span>React.js</span>
-                </div>
-                <!-- Add more skills with similar structure -->
-            </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#skill_section">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#faq_section">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        <!-- Backend -->
-        <div class="skill-category">
-            <h3>Backend Development</h3>
-            <div class="skills-list">
-                <div class="skill">
-                    <div class="skill-icon">
-                        <i class="fab fa-node"></i>
+    </nav>
+    <!-- Header -->
+    <header>
+        <div class="text">
+            <p>Hey there👋 !</p>
+            <h1> I am <span>Ariana.</span></h1>
+            <div class="icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button class="btn_resume"><a href="#">Download Resume</a></button>
+
+        </div>
+        <div class="images">
+            <img src="assets\graph.png" alt="image1" class="shape">
+            <img src="assets\profile.png" alt="image2" class="girl">
+        </div>
+
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="about-me">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>A passionate web developer currently in my second year at IGDTUW. My journey in the world of technology
+                began with a deep curiosity for how things work on the web.
+                In my courses at IGDTUW, I've gained a solid foundation in programming languages like HTML, CSS, and
+                JavaScript. I'm enthusiastic about creating responsive and visually appealing websites that not only
+                meet functional requirements but also deliver a delightful user experience.
+                My interest in web development extends beyond the classroom. I actively participate in coding
+                competitions, hackathons, and collaborative projects, continuously enhancing my skills and staying
+                abreast of the latest industry trends.</p>
+            As a second-year student, I look forward to further expanding my knowledge, tackling challenging projects,
+            and contributing to the dynamic field of web development. Let's connect and explore the possibilities
+            together!</p>
+        </div>
+    </section>
+
+
+    <!-- Skills section -->
+    <section id="skill_section" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <!-- Frontend -->
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skills-list">
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <span>HTML5</span>
                     </div>
-                    <span>Node.js</span>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <span>CSS3</span>
                     </div>
-                    <span>MongoDB</span>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <span>React.js</span>
+                    </div>
+                    <!-- Add more skills with similar structure -->
                 </div>
             </div>
+            <!-- Backend -->
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skills-list">
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-node"></i>
+                        </div>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <!-- Education Section -->
 <section id="education" class="education part">
@@ -159,60 +179,75 @@
                 <div class="content">
                   <h2>20XX</h2>
                   <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
-            </div>        
-        </div>
-    </div>
-</section>
 
-<!-- Project Section -->
-<section id="projects" class="projects">
-    <div class="container">
-        <div id="project-heading">
-        <h1 >Projects</h1></div> 
-        <div class="box">
-            <!-- projects on left -->
-            <div class="project-left">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>A dynamic web application showcasing my skills in HTML, CSS, and JavaScript. Implemented responsive design for optimal user experience.</p>
-                    <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript</p> 
-                    <div class="buttons">
-                        <button><a href="https://example-project1-live-website.com" target="_blank">Live Website</a></button>
-                        <button><a href="https://github.com/your-username/project1" target="_blank">GitHub Repo</a></button>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>Developed a full-stack web application using Node.js and MongoDB. Implemented user authentication and integrated third-party APIs for enhanced functionality.</p>
-                    <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p> 
-                    <div class="buttons">
-                        <button><a href="https://example-project1-live-website.com" target="_blank">Live Website</a></button>
-                        <button><a href="https://github.com/your-username/project1" target="_blank">GitHub Repo</a></button>
-                    </div>
                 </div>
             </div>
-            <!-- projects on right -->
-           <div class="project-right">
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless user interface and employed RESTful API communication.</p>
-                    <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
-                    <div class="buttons">
-                        <button><a href="https://example-project1-live-website.com" target="_blank">Live Website</a></button>
-                        <button><a href="https://github.com/your-username/project1" target="_blank">GitHub Repo</a></button>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div id="project-heading">
+                <h1>Projects</h1>
+            </div>
+            <div class="box">
+                <!-- projects on left -->
+                <div class="project-left">
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <p>A dynamic web application showcasing my skills in HTML, CSS, and JavaScript. Implemented
+                            responsive design for optimal user experience.</p>
+                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript</p>
+                        <div class="buttons">
+                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
+                                    Website</a></button>
+                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
+                                    Repo</a></button>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <h3>Project 2</h3>
+                        <p>Developed a full-stack web application using Node.js and MongoDB. Implemented user
+                            authentication and integrated third-party APIs for enhanced functionality.</p>
+                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+                        <div class="buttons">
+                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
+                                    Website</a></button>
+                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
+                                    Repo</a></button>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <h3>Project 4</h3>
-                    <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless user interface and employed RESTful API communication.</p>
-                    <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
-                    <div class="buttons">
-                        <button><a href="https://example-project1-live-website.com" target="_blank">Live Website</a></button>
-                        <button><a href="https://github.com/your-username/project1" target="_blank">GitHub Repo</a></button>
+                <!-- projects on right -->
+                <div class="project-right">
+                    <div class="project">
+                        <h3>Project 3</h3>
+                        <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
+                            user interface and employed RESTful API communication.</p>
+                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
+                        <div class="buttons">
+                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
+                                    Website</a></button>
+                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
+                                    Repo</a></button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h3>Project 4</h3>
+                        <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
+                            user interface and employed RESTful API communication.</p>
+                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
+                        <div class="buttons">
+                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
+                                    Website</a></button>
+                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
+                                    Repo</a></button>
+                        </div>
                     </div>
                 </div>
+
            </div>
        </div>
     </div>
@@ -313,38 +348,54 @@ end -->
             <div>
                 <span><img src="assets\certificate.png"></span>
                 <span><img src="assets\certificate.png"></span>
-                <span><img src="assets\certificate.png"></span>
-            </div>
-            <div>
-                <span><img src="assets\certificate.png"></span>
-                <span><img src="assets\certificate.png"></span>
-                <span><img src="assets\certificate.png"></span>
+
             </div>
         </div>
-        <img src="assets\next.png" id="nextbutton">
-    </div>
-</section>
+    </section>
 
-<!-- FAQ section -->
-<section id="faq_section" class="faq">
-    <div class="container">
-        <h2>Frequently Asked Questions</h2>
-        <details>
-            <summary>In which year do I study?</summary>
-            <p>I currently study in 2nd year.</p>
-        </details>
+    <section id="certificates" class="container">
+        <div id="certificate-heading">
+            <h1>Certificates</h1>
+        </div>
+        <div class="gallerywrap">
+            <img src="assets\back.png" id="backbutton">
+            <div class="gallery">
+                <div>
+                    <span><img src="assets\certificate.png"></span>
+                    <span><img src="assets\certificate.png"></span>
+                    <span><img src="assets\certificate.png"></span>
+                </div>
+                <div>
+                    <span><img src="assets\certificate.png"></span>
+                    <span><img src="assets\certificate.png"></span>
+                    <span><img src="assets\certificate.png"></span>
+                </div>
+            </div>
+            <img src="assets\next.png" id="nextbutton">
+        </div>
+    </section>
 
-        <details>
-            <summary>Am I a member of any of the college societies?</summary>
-            <p>Yes, I am the part of college societies named_____</p>
-        </details>
+    <!-- FAQ section -->
+    <section id="faq_section" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>In which year do I study?</summary>
+                <p>I currently study in 2nd year.</p>
+            </details>
 
-        <details>
-            <summary>What are my hobbies?</summary>
-            <p>I have various hobbies , I like to ___name of hobbies___</p>
-        </details>
-    </div>
-</section>
+            <details>
+                <summary>Am I a member of any of the college societies?</summary>
+                <p>Yes, I am the part of college societies named_____</p>
+            </details>
+
+            <details>
+                <summary>What are my hobbies?</summary>
+                <p>I have various hobbies , I like to ___name of hobbies___</p>
+            </details>
+        </div>
+    </section>
+
 
 
 <!-- Contact Me Section -->
@@ -375,10 +426,10 @@ end -->
             <div class="contact-item">
                 <img src="./assets/twitter.svg" alt="Twitter Icon">
                 <p>Twitter: <a href="https://twitter.com/yourusername" target="_blank">Your Twitter</a></p>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 <footer>
         <div class="footer-container">
@@ -424,6 +475,7 @@ end -->
 </footer>
 
 
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="script.js"></script> 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -433,6 +485,7 @@ end -->
     duration: 1000
   });
 </script>
-</body>
-</html>
 
+</body>
+
+</html>

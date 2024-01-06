@@ -4,13 +4,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Global Styles */
 
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: #333;
 }
+
+.container {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+h2 {
+  color: #0277bd;
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
 #uploadContainer {
   position: relative;
 }
@@ -291,6 +306,9 @@ input[type="file"] {
     flex-flow: row nowrap;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
   }
 
   .navbar-expand-custom .navbar-nav {
@@ -358,7 +376,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height: 80vh;
+  height: 100vh;
 }
 
 .text{
@@ -563,17 +581,6 @@ button a:hover{
   /* Increase border-radius for the FAQ section */
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #333;
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
 details {
   margin-bottom: 20px;
   border-radius: 15px;
@@ -607,117 +614,6 @@ details p {
   text-align: left;
 }
 
-.about-me,
-.projects,
-.contact {
-  background-color: #f4f4f4;
-  padding: 40px 0;
-}
-.box{
-  display: flex;
-}
-
-#projects {
-    padding: 40px 0;
-    background-color: #f4f4f4;
-}
-
-.project {
-    overflow: hidden;
-    background-color: #fff;
-    padding: 20px;
-    margin:2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .project:hover {
-      transform: scale(1.08);
-      background-color: #f6f6f6;
-  }
-
-
-
-@media screen and (max-width: 918px) {
-  .box {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .project {
-      flex: 0 0 calc(100% - 20px); 
-      max-width: calc(100% - 20px); 
-      
-  }
-}
-
-.project h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: larger;
-    margin-top: 0;
-}
-
-.project p {
-    margin-bottom: 10px;
-}
-
-.project button {
-    display: block;
-    margin: 10px;
-    margin-left: 0;
-    padding: 8px 16px;
-    background-color: #3498db;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.project button:hover {
-  background-color: #2980b9;
-}
-.project button a{
-  text-decoration: none;
-  color: #fff;
-}
-.project .buttons {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.scroll-up-btn {
-  position: fixed;
-  height: 45px;
-  width: 42px;
-  background: #2980b9;
-  right: 30px;
-  bottom: 10px;
-  text-align: center;
-  line-height: 45px;
-  color: #fff;
-  z-index: 9999;
-  font-size: 30px;
-  border-radius: 6px;
-  border-bottom-width: 2px;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-.scroll-up-btn.show {
-  bottom: 30px;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.scroll-up-btn:hover {
-  filter: brightness(90%);
-}
 
 /* FAQ section styling */
 .faq {
@@ -725,17 +621,6 @@ details p {
   padding: 50px 0;
   text-align: left;
   border-radius: 15px;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #333;
-  font-size: 2em;
-  margin-bottom: 30px;
 }
 
 details {
@@ -804,26 +689,9 @@ details p {
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 /* Skills section styling */
-.skills {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #0277bd;
-}
 
 .skill-category {
   margin-top: 40px;
-}
-
-.skill-category h3 {
-  color: #01579b;
 }
 
 .skills-list {
@@ -834,18 +702,6 @@ h2 {
   margin-top: 20px;
 }
 
-.skill {
-  background-color: #ffffff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.skill:hover {
-  transform: translateY(-5px);
-}
-
 .skill i {
   font-size: 40px;
   color: #0277bd;
@@ -853,47 +709,16 @@ h2 {
   display: block;
 }
 
-.skill span {
-  color: #01579b;
-  font-weight: bold;
-}
-
-/* design of skills section */
-
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-
-
 .skills {
   background-color: #e0f7fa;
-  padding: 50px 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h2 {
-  color: #0277bd;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.skill-category {
-  margin-top: 40px;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .skill-category h3 {
   color: #01579b;
   font-size: 1.5em;
   margin-bottom: 15px;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
 }
 
 .skill {
@@ -922,6 +747,11 @@ h2 {
   display: block;
 }
 
+/* Education section design */
+.education{
+  padding: 2rem 0rem;
+}
+
 .footer-container{
   padding-top: 57px; 
   padding-bottom: 60px; 
@@ -932,6 +762,7 @@ h2 {
   align-items: center; 
   display: inline-flex
 }
+
 .footer-disc{
   color: white; 
   font-size: 16px; 
@@ -939,7 +770,6 @@ h2 {
   font-weight: 400;
   word-wrap: break-word"
 }
-
 
 .footer-container {
   
@@ -1075,11 +905,8 @@ h2 {
   transform: scale(1.08);
 }
 
+
 /* testimonials */
-
-
-
-
 .testimonial-slider {
   display: flex;
   overflow-x: auto;
@@ -1100,30 +927,10 @@ h2 {
 }
 
 
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 /* Testimonial Section Styles */
 .testimonial-section {
   padding: 50px 0;
   text-align: center;
-}
-
-h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
 }
 
 .testimonial-grid {

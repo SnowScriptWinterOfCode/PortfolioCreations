@@ -401,6 +401,11 @@ header span{
   margin-top: 30px;
   margin-left: 10px;
 }
+
+ .icons a:hover {
+  transform: scale(1.12);
+}
+
 .fab{
   color: black;
   margin-right: 2rem; 

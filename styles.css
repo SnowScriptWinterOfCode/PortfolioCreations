@@ -575,7 +575,6 @@ h2 {
 }
 
 details {
-  max-width: 500px;
   box-sizing: border-box;
   margin-top: 10px;
   background: white;
@@ -619,6 +618,7 @@ label::before {
 
 div.faq-content {
   padding: 0 10px;
+  width: 80%;
 }
 
 input:checked + details,

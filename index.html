@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
     <title>Your Name - Portfolio</title>
 </head>
 
 <body>
 
+    <!-- Preloader -->
+    <div class="preloader">
+        <img class="loader" src="assets/preloader.gif" alt="Loading...">
+    </div>
 
     <!-- Scroll-to-top button -->
     <div class="scroll-up-btn">
@@ -51,6 +54,9 @@
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item ">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item ">
                     <a class="nav-link" href="#certificates">Certificates</a>
                 </li>
                 <li class="nav-item ">
@@ -62,6 +68,7 @@
             </ul>
         </div>
     </nav>
+
     <!-- Header -->
     <header>
         <div class="text">
@@ -99,7 +106,6 @@
             together!</p>
         </div>
     </section>
-
 
     <!-- Skills section -->
     <section id="skill_section" class="skills">
@@ -266,6 +272,43 @@
         </div>
     </section>
 
+    <!-- Experience Section  -->
+    <section id="experience" class = "main">
+        <h5 class="heading">Experience</h5>
+        <div class="exp">
+            <ul>
+                <li>
+                    <h3 class="title">Frontend Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">January 2022</span>
+                </li>
+                <li>
+                    <h3 class="title">Backend Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">February 2022</span>
+                </li>
+                <li>
+                    <h3 class="title">Web Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">March 2022</span>
+                </li>
+                <li>
+                    <h3 class="title">Blockchain Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">April 2022</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section id="testimonials" class="testimonial-section">
         <div class="container">
             <h2>Testimonials</h2>
@@ -323,9 +366,7 @@
         </div>
     </section>
 
-
-    <!--     Certificates -->
-
+    <!-- Certificates -->
     <section id="certificates" class="container">
         <div id="certificate-heading">
             <h1>Certificates</h1>
@@ -385,8 +426,6 @@
         </div>
     </section>
 
-
-
     <!-- Contact Me Section -->
     <footer class="footer-section" id="contact">
         <div class="container">
@@ -434,17 +473,24 @@
     </footer>
 
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+
         AOS.init({
             offset: 300,
             duration: 1000
         });
+        
+        // Preloader script
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+            }, 2000);
+        });
     </script>
-
+    
 </body>
 
 </html>

@@ -1,451 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
     <title>Your Name - Portfolio</title>
-</head>
+    <link rel="icon" href="assets/head_logo.png" />
+  </head>
 
-<body>
-
-
+  <body>
     <!-- Scroll-to-top button -->
     <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">Portfolio</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="leftSide"></div>
-                    <div class="rightSide"></div>
-                </div>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About Me</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#skill_section">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#faq_section">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand navbar-logo" href="#">Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="hori-selector">
+            <div class="leftSide"></div>
+            <div class="rightSide"></div>
+          </div>
+          <li class="nav-item active" id="li_about">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item" id="li_skill_section">
+            <a class="nav-link" href="#skill_section">Skills</a>
+          </li>
+          <li class="nav-item" id="li_education">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item" id="li_projects">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item" id="li_faq_section">
+            <a class="nav-link" href="#faq_section">FAQ</a>
+          </li>
+          <li class="nav-item" id="li_contact">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- Header -->
     <header>
-        <div class="text">
-            <p>Hey there👋 !</p>
-            <h1> I am <span>Ariana.</span></h1>
-            <div class="icons">
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <button class="btn_resume"><a href="#">Download Resume</a></button>
-
+      <div class="text">
+        <p>Hey there👋 !</p>
+        <h1>I am <span>Ariana.</span></h1>
+        <div class="icons">
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="images">
-            <img src="assets\graph.png" alt="image1" class="shape">
-            <img src="assets\profile.png" alt="image2" class="girl">
-        </div>
-
+        <button class="btn_resume"><a href="#">Download Resume</a></button>
+      </div>
+      <div class="images">
+        <img src="assets\graph.png" alt="image1" class="shape" />
+        <img src="assets\profile.png" alt="image2" class="girl" />
+      </div>
     </header>
 
     <!-- About Me -->
     <section id="about" class="about-me">
-        <div class="container">
-            <h1>About Me</h1>
-            <p>A passionate web developer currently in my second year at IGDTUW. My journey in the world of technology
-                began with a deep curiosity for how things work on the web.
-                In my courses at IGDTUW, I've gained a solid foundation in programming languages like HTML, CSS, and
-                JavaScript. I'm enthusiastic about creating responsive and visually appealing websites that not only
-                meet functional requirements but also deliver a delightful user experience.
-                My interest in web development extends beyond the classroom. I actively participate in coding
-                competitions, hackathons, and collaborative projects, continuously enhancing my skills and staying
-                abreast of the latest industry trends.</p>
-            As a second-year student, I look forward to further expanding my knowledge, tackling challenging projects,
-            and contributing to the dynamic field of web development. Let's connect and explore the possibilities
-            together!</p>
-        </div>
+      <div class="container">
+        <h1>About Me</h1>
+        <p>
+          A passionate web developer currently in my second year at IGDTUW. My
+          journey in the world of technology began with a deep curiosity for how
+          things work on the web. In my courses at IGDTUW, I've gained a solid
+          foundation in programming languages like HTML, CSS, and JavaScript.
+          I'm enthusiastic about creating responsive and visually appealing
+          websites that not only meet functional requirements but also deliver a
+          delightful user experience. My interest in web development extends
+          beyond the classroom. I actively participate in coding competitions,
+          hackathons, and collaborative projects, continuously enhancing my
+          skills and staying abreast of the latest industry trends.
+        </p>
+        <p>
+          As a second-year student, I look forward to further expanding my
+          knowledge, tackling challenging projects, and contributing to the
+          dynamic field of web development. Let's connect and explore the
+          possibilities together!
+        </p>
+      </div>
     </section>
-
 
     <!-- Skills section -->
     <section id="skill_section" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <!-- Frontend -->
-            <div class="skill-category">
-                <h3>Frontend Development</h3>
-                <div class="skills-list">
-                    <div class="skill">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <span>React.js</span>
-                    </div>
-                    <!-- Add more skills with similar structure -->
-                </div>
+      <div class="container">
+        <h2>Skills</h2>
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skills-list">
+            <div class="skill">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span>HTML5</span>
             </div>
-            <!-- Backend -->
-            <div class="skill-category">
-                <h3>Backend Development</h3>
-                <div class="skills-list">
-                    <div class="skill">
-                        <div class="skill-icon">
-                            <i class="fab fa-node"></i>
-                        </div>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
+            <div class="skill">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span>CSS3</span>
             </div>
+            <div class="skill">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <span>React.js</span>
+            </div>
+            <!-- Add more skills with similar structure -->
+          </div>
         </div>
+        <!-- Backend -->
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skills-list">
+            <div class="skill">
+              <div class="skill-icon">
+                <i class="fab fa-node"></i>
+              </div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-<!-- Education Section -->
-<section id="education" class="education part">
-    <div class="container">
+    <!-- Education Section -->
+    <section id="education" class="education part">
+      <div class="container">
         <h1>Education</h1>
         <div class="timeline">
-            <div class="contain left" data-aos="fade-right">
-                <div class="content">
-                  <h2>20XX</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
+          <div class="contain left" data-aos="fade-right">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
             </div>
-            <div class="contain right" data-aos="fade-left">
-                <div class="content">
-                  <h2>20XX</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
+          </div>
+          <div class="contain right" data-aos="fade-left">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
             </div>
-            <div class="contain left" data-aos="fade-right">
-                <div class="content">
-                  <h2>20XX</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                </div>
+          </div>
+          <div class="contain left" data-aos="fade-right">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
             </div>
-            <div class="contain right" data-aos="fade-left">
-                <div class="content">
-                  <h2>20XX</h2>
-                  <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-
-                </div>
+          </div>
+          <div class="contain right" data-aos="fade-left">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Project Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <div id="project-heading">
-                <h1>Projects</h1>
+      <div class="container">
+        <div id="project-heading">
+          <h1>Projects</h1>
+        </div>
+        <div class="box">
+          <!-- projects on left -->
+          <div class="project-left">
+            <div class="project">
+              <h3>Project 1</h3>
+              <p>
+                A dynamic web application showcasing my skills in HTML, CSS, and
+                JavaScript. Implemented responsive design for optimal user
+                experience.
+              </p>
+              <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript</p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
             </div>
-            <div class="box">
-                <!-- projects on left -->
-                <div class="project-left">
-                    <div class="project">
-                        <h3>Project 1</h3>
-                        <p>A dynamic web application showcasing my skills in HTML, CSS, and JavaScript. Implemented
-                            responsive design for optimal user experience.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
 
-                    <div class="project">
-                        <h3>Project 2</h3>
-                        <p>Developed a full-stack web application using Node.js and MongoDB. Implemented user
-                            authentication and integrated third-party APIs for enhanced functionality.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- projects on right -->
-                <div class="project-right">
-                    <div class="project">
-                        <h3>Project 3</h3>
-                        <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
-                            user interface and employed RESTful API communication.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <h3>Project 4</h3>
-                        <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
-                            user interface and employed RESTful API communication.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                </div>
+            <div class="project">
+              <h3>Project 2</h3>
+              <p>
+                Developed a full-stack web application using Node.js and
+                MongoDB. Implemented user authentication and integrated
+                third-party APIs for enhanced functionality.
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
+                Node.js, MongoDB
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- projects on right -->
+          <div class="project-right">
+            <div class="project">
+              <h3>Project 3</h3>
+              <p>
+                Built a mobile-responsive website using React.js. Integrated
+                state management for a seamless user interface and employed
+                RESTful API communication.
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
+                React.js
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="project">
+              <h3>Project 4</h3>
+              <p>
+                Built a web app for efficient task organization, featuring
+                prioritization, due dates, collaborative assignments, enhancing
+                productivity seamlessly.
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
+                React.js, Node.js, PostgreSQL
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-           </div>
-       </div>
-    </div>
-</section>
-    
-<section id="testimonials" class="testimonial-section">
-    <div class="container">
+    <section id="testimonials" class="testimonial-section">
+      <div class="container">
         <h2>Testimonials</h2>
 
         <div class="testimonial-slider">
-            <div class="testimonial-card">
-                <blockquote>
-                    <p>"I am so impressed with your work. Great job!"</p>
-                </blockquote>
-                <div class="testimonial-info">
-                    <!-- Circular icon -->
-                    <div class="icon">
-                        <span>👍</span>
-                    </div>
-                    <div class="text">
-                        <h3>Aarushi Singh</h3>
-                        <p>CEO, XYZ Company</p>
-                    </div>
-                </div>
+          <div class="testimonial-card">
+            <blockquote>
+              <p>"I am so impressed with your work. Great job!"</p>
+            </blockquote>
+            <div class="testimonial-info">
+              <!-- Circular icon -->
+              <div class="icon">
+                <span>👍</span>
+              </div>
+              <div class="text">
+                <h3>Aarushi Singh</h3>
+                <p>CEO, XYZ Company</p>
+              </div>
             </div>
+          </div>
 
-            <div class="testimonial-card">
-                <blockquote>
-                    <p>"Your dedication and expertise have exceeded our expectations."</p>
-                </blockquote>
-                <div class="testimonial-info">
-                    <!-- Circular icon -->
-                    <div class="icon">
-                        <span>🌟</span>
-                    </div>
-                    <div class="text">
-                        <h3>John Smith</h3>
-                        <p>Marketing Manager, ABC Corp</p>
-                    </div>
-                </div>
+          <div class="testimonial-card">
+            <blockquote>
+              <p>
+                "Your dedication and expertise have exceeded our expectations."
+              </p>
+            </blockquote>
+            <div class="testimonial-info">
+              <!-- Circular icon -->
+              <div class="icon">
+                <span>🌟</span>
+              </div>
+              <div class="text">
+                <h3>John Smith</h3>
+                <p>Marketing Manager, ABC Corp</p>
+              </div>
             </div>
+          </div>
 
-            <div class="testimonial-card">
-                <blockquote>
-                    <p>"Working with your team has been an absolute pleasure."</p>
-                </blockquote>
-                <div class="testimonial-info">
-                    <!-- Circular icon -->
-                    <div class="icon">
-                        <span>😊</span>
-                    </div>
-                    <div class="text">
-                        <h3>Alice Johnson</h3>
-                        <p>Founder, MNO Foundation</p>
-                    </div>
-                </div>
+          <div class="testimonial-card">
+            <blockquote>
+              <p>"Working with your team has been an absolute pleasure."</p>
+            </blockquote>
+            <div class="testimonial-info">
+              <!-- Circular icon -->
+              <div class="icon">
+                <span>😊</span>
+              </div>
+              <div class="text">
+                <h3>Alice Johnson</h3>
+                <p>Founder, MNO Foundation</p>
+              </div>
             </div>
-
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!--     Certificates -->
+    <!--     Certificates -->
 
     <section id="certificates" class="container">
-        <div id="certificate-heading">
-            <h1>Certificates</h1>
+      <div id="certificate-heading">
+        <h1>Certificates</h1>
+      </div>
+      <div class="gallerywrap">
+        <img src="assets\back.png" id="backbutton" />
+        <div class="gallery">
+          <div>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+          </div>
+          <div>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+          </div>
         </div>
-        <div class="gallerywrap">
-            <img src="assets\back.png" id="backbutton">
-            <div class="gallery">
-                <div>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                </div>
-                <div>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                </div>
-            </div>
-            <img src="assets\next.png" id="nextbutton">
-        </div>
+        <img src="assets\next.png" id="nextbutton" />
+      </div>
     </section>
 
     <!-- FAQ section -->
     <section id="faq_section" class="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <details>
-                <summary>In which year do I study?</summary>
-                <p>I currently study in 2nd year.</p>
-            </details>
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+          <summary>In which year do I study?</summary>
+          <p>I currently study in 2nd year.</p>
+        </details>
 
-            <details>
-                <summary>Am I a member of any of the college societies?</summary>
-                <p>Yes, I am the part of college societies named_____</p>
-            </details>
+        <details>
+          <summary>Am I a member of any of the college societies?</summary>
+          <p>Yes, I am the part of college societies named_____</p>
+        </details>
 
-            <details>
-                <summary>What are my hobbies?</summary>
-                <p>I have various hobbies , I like to ___name of hobbies___</p>
-            </details>
-        </div>
+        <details>
+          <summary>What are my hobbies?</summary>
+          <p>I have various hobbies , I like to ___name of hobbies___</p>
+        </details>
+      </div>
     </section>
 
-
-
-<!-- Contact Me Section -->
-<section id="contact" class="contact">
-    <div class="container">
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact">
+      <div class="container">
         <h1>Contact Me</h1>
         <div class="contact-info">
-            <div class="contact-item">
-                <img src="./assets/mail.svg" alt="Email Icon">
-                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            </div>
+          <div class="contact-item">
+            <img src="./assets/mail.svg" alt="Email Icon" />
+            <p>
+              Email:
+              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </p>
+          </div>
 
-            <div class="contact-item">
-                <img src="assets/telephone.png" width="30" height="30" alt="Phone Icon">
-                <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
-            </div>
+          <div class="contact-item">
+            <img
+              src="assets/telephone.png"
+              width="30"
+              height="30"
+              alt="Phone Icon"
+            />
+            <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
+          </div>
 
-            <div class="contact-item">
-                <img src="./assets/location.png" width="30" height="30" alt="Address Icon">
-                <p>Address: 123 Main St, Cityville, Country</p>
-            </div>
+          <div class="contact-item">
+            <img
+              src="./assets/location.png"
+              width="30"
+              height="30"
+              alt="Address Icon"
+            />
+            <p>Address: 123 Main St, Cityville, Country</p>
+          </div>
 
-            <div class="contact-item">
-                <img src="./assets/linkedin.svg" alt="LinkedIn Icon">
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername/" target="_blank">Your LinkedIn</a></p>
-            </div>
+          <div class="contact-item">
+            <img src="./assets/linkedin.svg" alt="LinkedIn Icon" />
+            <p>
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/yourusername/"
+                target="_blank"
+                >Your LinkedIn</a
+              >
+            </p>
+          </div>
 
-            <div class="contact-item">
-                <img src="./assets/twitter.svg" alt="Twitter Icon">
-                <p>Twitter: <a href="https://twitter.com/yourusername" target="_blank">Your Twitter</a></p>
-
-            </div>
+          <div class="contact-item">
+            <img src="./assets/twitter.svg" alt="Twitter Icon" />
+            <p>
+              Twitter:
+              <a href="https://twitter.com/yourusername" target="_blank"
+                >Your Twitter</a
+              >
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
-<footer>
-        <div class="footer-container">
-            <div class="footer-section" id="footer-left-section">
-                <div class="footer-content">
-                    <div id="footer-logo" class="footer-heading">GET IN TOUCH</div>
-                    <div class="footer-disc">Lorem ipsum dolor sit amet, consectetur <br/>adipiscing elit, sed do eiusmod tempor <br/>incididunt ut labore et dolore magna aliqua.</div>
-                </div>
-                <div class="social-icons">
-                    <div class="social-icon"><a href="#"><img src="assets/mdi_twitter.png"></a></div>
-                    <div class="social-icon"><a href="#"><img src="assets/mdi_youtube.png"></a></div>
-                    <div class="social-icon"><a href="#"><img src="assets/ri_facebook-fill.png"></a></div>
-                    <div class="social-icon"><a href="#"><img src="assets/uil_instagram-alt.png"></a></div>
-                </div>
-                <div class="copyright">© 2023 Your Name. All Rights Reserved.</div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section" id="footer-left-section">
+          <div class="footer-content">
+            <div id="footer-logo" class="footer-heading">GET IN TOUCH</div>
+            <div class="footer-disc">
+              Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed
+              do eiusmod tempor <br />incididunt ut labore et dolore magna
+              aliqua.
             </div>
-            <div class="footer-section" id="footer-right-section">
-                <div class="footer-content">
-                    <div class="footer-heading">Quick Links</div>
-                    <div class="divider"></div>
-                    <div class="footer-link">
-                        <div class="link-text">> &nbsp;<a href="#about">About Me</a></div>
-                    </div>
-                    <div class="footer-link">
-                        <div class="link-text">> &nbsp;<a href="#skill_section">Skills</a></div>
-                    </div>
-                    <div class="footer-link">
-                        <div class="link-text">> &nbsp;<a href="#education">Education</a></div>
-                    </div>
-                    <div class="footer-link">
-                        <div class="link-text">> &nbsp;<a href="#projects">Projects</a></div>
-                    </div>
-                    <div class="footer-link">
-                        <div class="link-text">> &nbsp;<a href="#faq_section">FAQS</a></div>
-                    </div>
-                    <div class="footer-link">
-                        <div class="link-text">> &nbsp;<a href="#contact">Contact</a></div>
-                    </div>
-                </div>
+          </div>
+          <div class="social-icons">
+            <div class="social-icon">
+              <a href="#"><img src="assets/mdi_twitter.png" /></a>
             </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/mdi_youtube.png" /></a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/ri_facebook-fill.png" /></a>
+            </div>
+            <div class="social-icon">
+              <a href="#"><img src="assets/uil_instagram-alt.png" /></a>
+            </div>
+          </div>
+          <div class="copyright">© 2023 Your Name. All Rights Reserved.</div>
         </div>
-    
-</footer>
+        <div class="footer-section" id="footer-right-section">
+          <div class="footer-content">
+            <div class="footer-heading">Quick Links</div>
+            <div class="divider"></div>
+            <div class="footer-link">
+              <div class="link-text">> &nbsp;<a href="#about">About Me</a></div>
+            </div>
+            <div class="footer-link">
+              <div class="link-text">
+                > &nbsp;<a href="#skill_section">Skills</a>
+              </div>
+            </div>
+            <div class="footer-link">
+              <div class="link-text">
+                > &nbsp;<a href="#education">Education</a>
+              </div>
+            </div>
+            <div class="footer-link">
+              <div class="link-text">
+                > &nbsp;<a href="#projects">Projects</a>
+              </div>
+            </div>
+            <div class="footer-link">
+              <div class="link-text">
+                > &nbsp;<a href="#faq_section">FAQS</a>
+              </div>
+            </div>
+            <div class="footer-link">
+              <div class="link-text">
+                > &nbsp;<a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="script.js"></script> 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    offset: 300,
-    duration: 1000
-  });
-</script>
-
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
+  </body>
 </html>

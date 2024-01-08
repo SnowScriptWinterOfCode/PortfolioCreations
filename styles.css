@@ -11,6 +11,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 #uploadContainer {
   position: relative;
 }
@@ -357,7 +358,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 150px;
   height: 80vh;
 }
 
@@ -377,12 +378,15 @@ header {
   /* font-family: 'Barlow Condensed', sans-serif; */
   margin-bottom: 0;
 }
+
 header span{
   color: #3498db;
 }
+
 .images{
   width: 36%;
 }
+
 .girl{
   position: relative;
   left: 45% ;
@@ -395,17 +399,18 @@ header span{
   bottom: 0;
   transform: translateX(-30%);
 }
-
+/* 
 .icons{
-  /* give left margin to this div */
+  /* give left margin to this div 
   margin-top: 30px;
   margin-left: 10px;
 }
+
 .fab{
   color: black;
   margin-right: 2rem; 
   font-size: 1.5rem;
-}
+} */
 
 .btn_resume{
   background-color: #3498db;
@@ -420,7 +425,7 @@ header span{
 
 button a{
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
 button a:hover{
@@ -432,11 +437,84 @@ button a:hover{
   .images {
     display: none;
   }
-
 }
 
+/* Social Links  */
+.icons {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
 
+.icons a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 2px;
+  text-align: right;
+  border-radius: 0 80px 80px 0;
+  transform: translate(-145px, 0);
+  transition: all 0.6s ease-in-out;
+}
 
+.icons a:hover {
+  transform: translate(0, 0);
+}
+
+.icons a i {
+  margin-left: 2rem;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 0.6s ease-in-out;
+}
+
+.icons a:hover i {
+  transform: rotate(360deg);
+}
+
+.icons a i.fa-linkedin-in {
+  color: #0077b5;
+}
+
+.icons a i.fa-github {
+  color: #000;
+}
+
+.icons a i.fa-twitter {
+  color: #1DA1F2;
+}
+
+.linkedin {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.github {
+  background-color: #000;
+  color: #fff;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+  color: #fff;
+}
+
+.icons a:hover {
+  color: #fff;
+}
+
+/* Projects  */
 .about-me,
 .projects{
   background-color: #f4f4f4;

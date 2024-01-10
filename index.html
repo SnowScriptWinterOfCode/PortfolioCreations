@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
     <title>Your Name - Portfolio</title>
 </head>
 
 <body>
 
+    <!-- Preloader -->
+    <div class="preloader">
+        <img class="loader" src="assets/preloader.gif" alt="Loading...">
+    </div>
 
     <!-- Scroll-to-top button -->
     <div class="scroll-up-btn">
@@ -51,6 +54,9 @@
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item ">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item ">
                     <a class="nav-link" href="#certificates">Certificates</a>
                 </li>
                 <li class="nav-item ">
@@ -60,18 +66,13 @@
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Social Links  -->
+<!-- Social Links  -->
      <div class="icons">
         <a href="#" target="_blank" class="linkedin">Linkedin<i class="fab fa-linkedin-in"></i></a>
         <a href="#" target="_blank" class="github">Github<i class="fab fa-github"></i></a>
         <a href="#" target="_blank" class="twitter">Twitter<i class="fab fa-twitter twitter"></i></a>
      </div>
-
-
-    <!-- Header -->
+<-- Header -->
     <header>
         <div class="text">
             <p>Hey there👋 !</p>
@@ -108,7 +109,6 @@
             together!</p>
         </div>
     </section>
-
 
     <!-- Skills section -->
     <section id="skill_section" class="skills">
@@ -216,7 +216,7 @@
             <div class="box">
                 <!-- projects on left -->
                 <div class="project-left">
-                    <div class="project">
+                    <div class="project" data-aos="fade-right">
                         <h3>Project 1</h3>
                         <p>A dynamic web application showcasing my skills in HTML, CSS, and JavaScript. Implemented
                             responsive design for optimal user experience.</p>
@@ -229,7 +229,7 @@
                         </div>
                     </div>
 
-                    <div class="project">
+                    <div class="project" data-aos="fade-right">
                         <h3>Project 2</h3>
                         <p>Developed a full-stack web application using Node.js and MongoDB. Implemented user
                             authentication and integrated third-party APIs for enhanced functionality.</p>
@@ -244,7 +244,7 @@
                 </div>
                 <!-- projects on right -->
                 <div class="project-right">
-                    <div class="project">
+                    <div class="project" data-aos="fade-left">
                         <h3>Project 3</h3>
                         <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
                             user interface and employed RESTful API communication.</p>
@@ -256,7 +256,7 @@
                                     Repo</a></button>
                         </div>
                     </div>
-                    <div class="project">
+                    <div class="project" data-aos="fade-left">
                         <h3>Project 4</h3>
                         <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
                             user interface and employed RESTful API communication.</p>
@@ -275,11 +275,48 @@
         </div>
     </section>
 
+    <!-- Experience Section  -->
+    <section id="experience" class = "main">
+        <h5 class="heading">Experience</h5>
+        <div class="exp">
+            <ul>
+                <li>
+                    <h3 class="title">Frontend Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">January 2022</span>
+                </li>
+                <li>
+                    <h3 class="title">Backend Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">February 2022</span>
+                </li>
+                <li>
+                    <h3 class="title">Web Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">March 2022</span>
+                </li>
+                <li>
+                    <h3 class="title">Blockchain Developer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
+                    <a href="#">Know More ></a>
+                    <span class="circle"></span>
+                    <span class="date">April 2022</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <section id="testimonials" class="testimonial-section">
         <div class="container">
             <h2>Testimonials</h2>
 
-            <div class="testimonial-slider">
+            <div class="testimonial-slider" data-aos="slide-left">
                 <div class="testimonial-card">
                     <blockquote>
                         <p>"I am so impressed with your work. Great job!"</p>
@@ -332,14 +369,12 @@
         </div>
     </section>
 
-
-    <!--     Certificates -->
-
+    <!-- Certificates -->
     <section id="certificates" class="container">
         <div id="certificate-heading">
             <h1>Certificates</h1>
         </div>
-        <div class="gallerywrap">
+        <div class="gallerywrap" data-aos="slide-right">
             <img src="assets\back.png" id="backbutton">
             <div class="gallery">
                 <div>
@@ -394,8 +429,6 @@
         </div>
     </section>
 
-
-
     <!-- Contact Me Section -->
     <footer class="footer-section" id="contact">
         <div class="container">
@@ -443,17 +476,24 @@
     </footer>
 
 
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+
         AOS.init({
             offset: 300,
             duration: 1000
         });
+        
+        // Preloader script
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector('.preloader').style.display = 'none';
+            }, 2000);
+        });
     </script>
-
+    
 </body>
 
 </html>

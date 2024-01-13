@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 html {
   scroll-behavior: smooth;
@@ -193,11 +194,16 @@ input[type="file"] {
 .navbar-logo {
   padding: 15px;
   color: #fff;
+  font-weight: bold;
+  font-size: small;
+}
+.navbar-logo:hover{ 
+  color: #fff;
 }
 
 .navbar-mainbg {
   background-color: #3498DB;
-  padding: 0px;
+  padding: 0px 4%;
 }
 
 #navbarSupportedContent {
@@ -224,6 +230,7 @@ input[type="file"] {
   text-decoration: none;
   font-size: 15px;
   display: block;
+  font-weight: lighter;
   padding: 20px 20px;
   transition-duration: 0.6s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -370,18 +377,21 @@ input[type="file"] {
   }
 }
 
-
 header {
-  background-color: #f4f4f4;
-  /* divs text and image inside should be side by side */
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  height: 80vh;
+  height: 100vh;
 }
 
+.subhead{
+  font-weight: lighter!important;
+  font-size: 80%!important;
+  color: rgb(76, 76, 76)!important;
+}
 .text{
   width: 50%;
   margin-left: 70px;
@@ -436,23 +446,27 @@ header span{
 
 .btn_resume{
   background-color: #3498db;
-  color: black;
+  color:white;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 1.2rem;
   cursor: pointer;
   margin-top: 40px;
+  transition: all 0.3s ease-in;
 }
-
-button a{
+.btn_resume a{
   text-decoration: none;
-  color: black;
-}
-
-button a:hover{
   color: white;
-  text-decoration: none;
+}
+.btn_resume:hover{
+  background-color: #2f83ba!important;
+  box-shadow: 2px 2px 8px 1px  #2f83ba;
+  transform: translateY(-10%);
+}
+
+#about-heading,#project-heading,#edu,#certificate-heading,#faq{
+  text-align: center;
 }
 
 @media  screen and (max-width: 918px) {
@@ -822,8 +836,6 @@ details:has(input:checked) label::before {
   filter: brightness(90%);
 }
 
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-
 /* Skills section styling */
 .skills {
   padding: 50px 0;
@@ -880,10 +892,6 @@ h2 {
 }
 
 /* design of skills section */
-
-
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-
 
 .skills {
   background-color: #e0f7fa;
@@ -1347,7 +1355,4 @@ ul li:nth-child(even) .circle {
       left: -20px;
       transform: translate(-50%, -50%);
   }
-}
-#project-heading,#edu,#certificate-heading,#faq{
-  text-align: center;
 }

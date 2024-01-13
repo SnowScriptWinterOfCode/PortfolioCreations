@@ -101,12 +101,12 @@ input[type="file"] {
 
 /* Place the container to the left */
 .left {
-  right: 5%;
+  right: 0.5%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 55%;
+  left: 50.4%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -187,6 +187,12 @@ input[type="file"] {
 /* EDUCATION SECTION ENDS */
 
 /*----------bootstrap-navbar-css------------*/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
 
 .navbar-logo {
   padding: 15px;
@@ -450,6 +456,7 @@ header span {
   margin-top: 40px;
   transition: all 0.3s ease-in;
 }
+
 .btn_resume a {
   text-decoration: none;
   color: white;
@@ -460,12 +467,55 @@ header span {
   transform: translateY(-10%);
 }
 
+/* ------------------About Me Section ----------------- */
+
+#about {
+  background-color: #e0f7fa;
+}
+
+.line {
+  display: flex;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+  text-shadow: 0.5px 0.4px black;
+}
+
+#xp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.vab-box {
+  background-color: white;
+  padding: 2rem 3rem;
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px rgb(5, 5, 5);
+}
+
+.num-box {
+  font: 600 1.4rem system-ui;
+}
+
+.num-box::after {
+  content: "+";
+}
+
+/* ----------------About Me Section Ends------------------- */
+
 #about-heading,
 #project-heading,
 #edu,
 #certificate-heading,
 #faq {
   text-align: center;
+}
+
+#edu {
+  padding-top: 1.5rem;
 }
 
 @media screen and (max-width: 918px) {
@@ -627,6 +677,7 @@ header span {
 .container {
   width: 80%;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 h2 {
@@ -834,11 +885,6 @@ details:has(input:checked) label::before {
   text-align: center;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 h2 {
   color: #0277bd;
 }
@@ -888,11 +934,6 @@ h2 {
 .skills {
   background-color: #e0f7fa;
   padding: 50px 0;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
 }
 
 h2 {
@@ -1086,11 +1127,6 @@ body {
   color: #333;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 /* Testimonial Section Styles */
 .testimonial-section {
   padding: 50px 0;
@@ -1190,6 +1226,10 @@ blockquote {
   color: #3498db;
   position: relative;
   margin-bottom: 80px;
+}
+
+.heading {
+  padding-top: 2.5rem;
 }
 
 .heading::after {

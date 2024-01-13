@@ -181,3 +181,28 @@ window.onscroll = () => {
     }
   });
 };
+
+// -------About me section number animation ---------
+
+function numIncrease(start, id, speed) {
+  elt = document.getElementById(id);
+  endNum = Number(document.getElementById(id).innerHTML);
+  incNumRec(start, endNum, elt, speed);
+}
+
+/*A recursive function to increase the number.*/
+function incNumRec(i, endNum, elt, speed) {
+  if (i <= endNum) {
+    elt.innerHTML = i;
+    setTimeout(function () {
+      //Delay a bit before calling the function again.
+      incNumRec(i + 1, endNum, elt, speed);
+    }, speed);
+  }
+}
+
+document.addEventListener("aos:in", () => {
+  numIncrease(0, "inc", 120);
+  numIncrease(24500, "speed", 5);
+  numIncrease(0, "tick", 200);
+});

@@ -55,28 +55,28 @@
             <div class="leftSide"></div>
             <div class="rightSide"></div>
           </div>
-          <li class="nav-item active">
+          <li class="nav-item active" id="li_about">
             <a class="nav-link" href="#about">About Me</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_skill_section">
             <a class="nav-link" href="#skill_section">Skills</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_education">
             <a class="nav-link" href="#education">Education</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_projects">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_experience">
             <a class="nav-link" href="#experience">Experience</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_certificates">
             <a class="nav-link" href="#certificates">Certificates</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_faq_section">
             <a class="nav-link" href="#faq_section">FAQ</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="li_contact">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -108,34 +108,75 @@
     <section id="about" class="about-me">
       <div class="container" data-aos="fade-up">
         <div id="#about-heading"><h1>About Me</h1></div>
-        <p>
-          A passionate and dedicated web developer currently immersed in the
-          second year of my academic journey at IGDTUW. My fascination with the
-          intricate workings of technology sparked at an early stage, driven by
-          a profound curiosity for the mechanics of the web.
-        </p>
-        <p>
-          Throughout my academic pursuits at IGDTUW, I've diligently cultivated
-          a robust foundation in key programming languages, encompassing HTML,
-          CSS, and JavaScript. My enthusiasm lies in the art of crafting
-          responsive and aesthetically pleasing websites, not only meeting
-          functional prerequisites but also ensuring a delightful user
-          experience.
-        </p>
-        <p>
-          Beyond the confines of the classroom, my engagement in coding
-          competitions, hackathons, and collaborative projects stands as a
-          testament to my proactive approach. This continuous involvement serves
-          as a means of enhancing my skills, keeping pace with the ever-evolving
-          industry trends.
-        </p>
-        <p>
-          As a second-year student, my aspirations extend towards broadening my
-          knowledge horizons, undertaking complex and stimulating projects, and
-          making valuable contributions to the dynamic realm of web development.
-          I am eager to connect and explore the myriad possibilities that lie
-          ahead. Let's embark on this journey together!
-        </p>
+        <div class="line">
+          <span>&#8674;</span>
+          <p class="desc-me">
+            A passionate and dedicated web developer currently immersed in the
+            second year of my academic journey at IGDTUW. My fascination with
+            the intricate workings of technology sparked at an early stage,
+            driven by a profound curiosity for the mechanics of the web.
+          </p>
+        </div>
+        <div class="line">
+          <span>&#8674;</span>
+          <p class="desc-me">
+            Throughout my academic pursuits at IGDTUW, I've diligently
+            cultivated a robust foundation in key programming languages,
+            encompassing HTML, CSS, and JavaScript. My enthusiasm lies in the
+            art of crafting responsive and aesthetically pleasing websites, not
+            only meeting functional prerequisites but also ensuring a delightful
+            user experience.
+          </p>
+        </div>
+        <div class="line">
+          <span>&#8674;</span>
+          <p class="desc-me">
+            Beyond the confines of the classroom, my engagement in coding
+            competitions, hackathons, and collaborative projects stands as a
+            testament to my proactive approach. This continuous involvement
+            serves as a means of enhancing my skills, keeping pace with the
+            ever-evolving industry trends.
+          </p>
+        </div>
+        <div class="line">
+          <span>&#8674;</span>
+          <p class="desc-me">
+            As a second-year student, my aspirations extend towards broadening
+            my knowledge horizons, undertaking complex and stimulating projects,
+            and making valuable contributions to the dynamic realm of web
+            development. I am eager to connect and explore the myriad
+            possibilities that lie ahead. Let's embark on this journey together!
+          </p>
+        </div>
+
+        <div id="xp">
+          <div
+            class="vab-box"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+          >
+            <div class="num-box" id="inc">26</div>
+            <div class="text-box">Projects Created</div>
+          </div>
+          <div
+            class="vab-box"
+            data-aos="flip-left"
+            data-aos-delay="500"
+            data-aos-easing="ease-out-cubic"
+          >
+            <div class="num-box" id="speed">25000</div>
+            <div class="text-box">Lines of Code Written</div>
+          </div>
+          <div
+            class="vab-box"
+            data-aos="flip-left"
+            data-aos-delay="1000"
+            data-aos-easing="ease-out-cubic"
+          >
+            <div class="num-box" id="tick">14</div>
+            <div class="text-box">Hackathons Participated</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -484,7 +525,7 @@
 
     <!-- Certificates -->
     <section id="certificates" class="container">
-      <div id="certificate-heading">
+      <div id="certificate-heading" class="container">
         <h1>Certificates</h1>
       </div>
       <div class="gallerywrap" data-aos="slide-right">

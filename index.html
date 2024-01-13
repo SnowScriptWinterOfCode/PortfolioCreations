@@ -1,506 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Portfolio Website</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Preloader -->
     <div class="preloader">
-        <img class="loader" src="assets/preloader.gif" alt="Loading...">
+      <img class="loader" src="assets/preloader.gif" alt="Loading..." />
     </div>
 
     <!-- Scroll-to-top button -->
     <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">PORTFOLIO</a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars text-white"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <div class="hori-selector">
-                    <div class="leftSide"></div>
-                    <div class="rightSide"></div>
-                </div>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About Me</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#skill_section">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#certificates">Certificates</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#faq_section">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand navbar-logo" href="#">PORTFOLIO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <div class="hori-selector">
+            <div class="leftSide"></div>
+            <div class="rightSide"></div>
+          </div>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill_section">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates">Certificates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq_section">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Header -->
     <header>
-        <div class="text">
-            <p>Hey there👋 !</p>
-            <h1> I am <span>Ariana.</span></h1>
-            <p class="subhead"> Software Developer | MERN stack Developer</p>
-            <div class="icons">
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-            <button class="btn_resume"><a href="assets/Resume.pdf" target="_blank">Resume</a></button>
+      <div class="text">
+        <p>Hey there👋 !</p>
+        <h1>I am <span>Ariana.</span></h1>
+        <p class="subhead">Software Developer | MERN stack Developer</p>
+        <div class="icons">
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
-        <div class="images">
-            <img src="assets\graph.png" alt="image1" class="shape">
-            <img src="assets\profile.png" alt="image2" class="girl">
-        </div>
-
+        <button class="btn_resume">
+          <a href="assets/Resume.pdf" target="_blank">Resume</a>
+        </button>
+      </div>
+      <div class="images">
+        <img src="assets\graph.png" alt="image1" class="shape" />
+        <img src="assets\profile.png" alt="image2" class="girl" />
+      </div>
     </header>
 
     <!-- About Me -->
     <section id="about" class="about-me">
-        <div class="container"data-aos="fade-up">
-        <div id="#about-heading"><h1>About Me</h1></div> 
-            <p>A passionate and dedicated web developer currently immersed in the second year of my academic 
-                journey at IGDTUW. My fascination with the intricate workings of technology sparked at an early 
-                stage, driven by a profound curiosity for the mechanics of the web.
-            </p>
-            <p>
-                Throughout my academic pursuits at IGDTUW, I've diligently cultivated a robust foundation in key 
-                programming languages, encompassing HTML, CSS, and JavaScript. My enthusiasm lies in the art of 
-                crafting responsive and aesthetically pleasing websites, not only meeting functional prerequisites
-                 but also ensuring a delightful user experience.
-            </p>
-            <p>
-                Beyond the confines of the classroom, my engagement in coding competitions, hackathons, and 
-                collaborative projects stands as a testament to my proactive approach. This continuous involvement 
-                serves as a means of enhancing my skills, keeping pace with the ever-evolving industry trends.
-            </p>
-            <p> 
-                As a second-year student, my aspirations extend towards broadening my knowledge horizons, 
-                undertaking complex and stimulating projects, and making valuable contributions to the dynamic realm 
-                of web development. I am eager to connect and explore the myriad possibilities that lie ahead. 
-                Let's embark on this journey together!
-            </p>
-        </div>
+      <div class="container" data-aos="fade-up">
+        <div id="#about-heading"><h1>About Me</h1></div>
+        <p>
+          A passionate and dedicated web developer currently immersed in the
+          second year of my academic journey at IGDTUW. My fascination with the
+          intricate workings of technology sparked at an early stage, driven by
+          a profound curiosity for the mechanics of the web.
+        </p>
+        <p>
+          Throughout my academic pursuits at IGDTUW, I've diligently cultivated
+          a robust foundation in key programming languages, encompassing HTML,
+          CSS, and JavaScript. My enthusiasm lies in the art of crafting
+          responsive and aesthetically pleasing websites, not only meeting
+          functional prerequisites but also ensuring a delightful user
+          experience.
+        </p>
+        <p>
+          Beyond the confines of the classroom, my engagement in coding
+          competitions, hackathons, and collaborative projects stands as a
+          testament to my proactive approach. This continuous involvement serves
+          as a means of enhancing my skills, keeping pace with the ever-evolving
+          industry trends.
+        </p>
+        <p>
+          As a second-year student, my aspirations extend towards broadening my
+          knowledge horizons, undertaking complex and stimulating projects, and
+          making valuable contributions to the dynamic realm of web development.
+          I am eager to connect and explore the myriad possibilities that lie
+          ahead. Let's embark on this journey together!
+        </p>
+      </div>
     </section>
 
     <!-- Skills section -->
     <section id="skill_section" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <!-- Frontend -->
-            <div class="skill-category" >
-                <h3>Frontend Development</h3>
-                <div class="skills-list">
-                    <div class="skill" data-aos="zoom-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill" data-aos="zoom-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-css3-alt"></i>
-                        </div>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill" data-aos="zoom-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill" data-aos="zoom-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <span>React.js</span>
-                    </div>
-                    <!-- Add more skills with similar structure -->
-                </div>
+      <div class="container">
+        <h2>Skills</h2>
+        <!-- Frontend -->
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+          <div class="skills-list">
+            <div class="skill" data-aos="zoom-in">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span>HTML5</span>
             </div>
-            <!-- Backend -->
-            <div class="skill-category">
-                <h3>Backend Development</h3>
-                <div class="skills-list">
-                    <div class="skill" data-aos="zoom-in">
-                        <div class="skill-icon">
-                            <i class="fab fa-node"></i>
-                        </div>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="skill" data-aos="zoom-in">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
+            <div class="skill" data-aos="zoom-in">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span>CSS3</span>
             </div>
+            <div class="skill" data-aos="zoom-in">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <span>React.js</span>
+            </div>
+            <!-- Add more skills with similar structure -->
+          </div>
         </div>
+        <!-- Backend -->
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+          <div class="skills-list">
+            <div class="skill" data-aos="zoom-in">
+              <div class="skill-icon">
+                <i class="fab fa-node"></i>
+              </div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill" data-aos="zoom-in">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education part">
-        <div class="container">
-            <h1 id="edu">Education</h1>
-            <div class="timeline">
-                <div class="contain left" data-aos="fade-right">
-                    <div class="content">
-                        <h2>20XX</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="contain right" data-aos="fade-left">
-                    <div class="content">
-                        <h2>20XX</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="contain left" data-aos="fade-right">
-                    <div class="content">
-                        <h2>20XX</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-                    </div>
-                </div>
-                <div class="contain right" data-aos="fade-left">
-                    <div class="content">
-                        <h2>20XX</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum,
-                            vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim
-                            per, habeo iusto primis ea eam.</p>
-
-                    </div>
-                </div>
+      <div class="container">
+        <h1 id="edu">Education</h1>
+        <div class="timeline">
+          <div class="contain left" data-aos="fade-right">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
             </div>
+          </div>
+          <div class="contain right" data-aos="fade-left">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
+            </div>
+          </div>
+          <div class="contain left" data-aos="fade-right">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
+            </div>
+          </div>
+          <div class="contain right" data-aos="fade-left">
+            <div class="content">
+              <h2>20XX</h2>
+              <p>
+                Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
+                admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea
+                quis iuvaret expetendis his, te elit voluptua dignissim per,
+                habeo iusto primis ea eam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Project Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <div id="project-heading">
-                <h1>Projects</h1>
+      <div class="container">
+        <div id="project-heading">
+          <h1>Projects</h1>
+        </div>
+        <div class="box">
+          <!-- projects on left -->
+          <div class="project-left">
+            <div class="project" data-aos="fade-right">
+              <h3>Project 1</h3>
+              <p>
+                A dynamic web application showcasing my skills in HTML, CSS, and
+                JavaScript. Implemented responsive design for optimal user
+                experience.
+              </p>
+              <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript</p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
             </div>
-            <div class="box">
-                <!-- projects on left -->
-                <div class="project-left">
-                    <div class="project" data-aos="fade-right">
-                        <h3>Project 1</h3>
-                        <p>A dynamic web application showcasing my skills in HTML, CSS, and JavaScript. Implemented
-                            responsive design for optimal user experience.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                  
-                    <div class="project" data-aos="fade-right">
-                        <h3>Project 2</h3>
-                        <p>Built a full-stack web app with Node.js and MongoDB, featuring user authentication 
-                            and third-party API integration for enhanced functionality.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, Node.js</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                </div>
-                <!-- projects on right -->
-                <div class="project-right">
-                    <div class="project" data-aos="fade-left">
-                        <h3>Project 3</h3>
-                        <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
-                            user interface and employed RESTful API communication.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                    <div class="project" data-aos="fade-left">
-                        <h3>Project 4</h3>
-                        <p>Built a mobile-responsive website using React.js. Integrated state management for a seamless
-                            user interface and employed RESTful API communication.</p>
-                        <p><strong>Skills and Tools:</strong> HTML, CSS, JavaScript, React.js</p>
-                        <div class="buttons">
-                            <button><a href="https://example-project1-live-website.com" target="_blank">Live
-                                    Website</a></button>
-                            <button><a href="https://github.com/your-username/project1" target="_blank">GitHub
-                                    Repo</a></button>
-                        </div>
-                    </div>
-                </div>
 
+            <div class="project" data-aos="fade-right">
+              <h3>Project 2</h3>
+              <p>
+                Built a full-stack web app with Node.js and MongoDB, featuring
+                user authentication and third-party API integration for enhanced
+                functionality.
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
+                Node.js
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
             </div>
+          </div>
+          <!-- projects on right -->
+          <div class="project-right">
+            <div class="project" data-aos="fade-left">
+              <h3>Project 3</h3>
+              <p>
+                Built a mobile-responsive website using React.js. Integrated
+                state management for a seamless user interface and employed
+                RESTful API communication.
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
+                React.js
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="project" data-aos="fade-left">
+              <h3>Project 4</h3>
+              <p>
+                Built a mobile-responsive website using React.js. Integrated
+                state management for a seamless user interface and employed
+                RESTful API communication.
+              </p>
+              <p>
+                <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
+                React.js
+              </p>
+              <div class="buttons">
+                <button>
+                  <a
+                    href="https://example-project1-live-website.com"
+                    target="_blank"
+                    >Live Website</a
+                  >
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/your-username/project1"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <!-- Experience Section  -->
-    <section id="experience" class = "main">
-        <h5 class="heading">Experience</h5>
-        <div class="exp">
-            <ul>
-                <li>
-                    <h3 class="title">Frontend Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
-                    <a href="#">Know More ></a>
-                    <span class="circle"></span>
-                    <span class="date">January 2022</span>
-                </li>
-                <li>
-                    <h3 class="title">Backend Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
-                    <a href="#">Know More ></a>
-                    <span class="circle"></span>
-                    <span class="date">February 2022</span>
-                </li>
-                <li>
-                    <h3 class="title">Web Designer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
-                    <a href="#">Know More ></a>
-                    <span class="circle"></span>
-                    <span class="date">March 2022</span>
-                </li>
-                <li>
-                    <h3 class="title">Blockchain Developer</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore totam ipsum neque, temporibus explicabo?</p>
-                    <a href="#">Know More ></a>
-                    <span class="circle"></span>
-                    <span class="date">April 2022</span>
-                </li>
-            </ul>
-        </div>
+    <section id="experience" class="main">
+      <h5 class="heading">Experience</h5>
+      <div class="exp">
+        <ul>
+          <li>
+            <h3 class="title">Frontend Developer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolore totam ipsum neque, temporibus explicabo?
+            </p>
+            <a href="#">Know More ></a>
+            <span class="circle"></span>
+            <span class="date">January 2022</span>
+          </li>
+          <li>
+            <h3 class="title">Backend Developer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolore totam ipsum neque, temporibus explicabo?
+            </p>
+            <a href="#">Know More ></a>
+            <span class="circle"></span>
+            <span class="date">February 2022</span>
+          </li>
+          <li>
+            <h3 class="title">Web Designer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolore totam ipsum neque, temporibus explicabo?
+            </p>
+            <a href="#">Know More ></a>
+            <span class="circle"></span>
+            <span class="date">March 2022</span>
+          </li>
+          <li>
+            <h3 class="title">Blockchain Developer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              dolore totam ipsum neque, temporibus explicabo?
+            </p>
+            <a href="#">Know More ></a>
+            <span class="circle"></span>
+            <span class="date">April 2022</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="testimonials" class="testimonial-section">
-        <div class="container">
-            <h2>Testimonials</h2>
+      <div class="container">
+        <h2>Testimonials</h2>
 
-            <div class="testimonial-slider" data-aos="slide-left">
-                <div class="testimonial-card">
-                    <blockquote>
-                        <p>"I am so impressed with your work. Great job!"</p>
-                    </blockquote>
-                    <div class="testimonial-info">
-                        <!-- Circular icon -->
-                        <div class="icon">
-                            <span>👍</span>
-                        </div>
-                        <div class="text">
-                            <h3>Aarushi Singh</h3>
-                            <p>CEO, XYZ Company</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <blockquote>
-                        <p>"Your dedication and expertise have exceeded our expectations."</p>
-                    </blockquote>
-                    <div class="testimonial-info">
-                        <!-- Circular icon -->
-                        <div class="icon">
-                            <span>🌟</span>
-                        </div>
-                        <div class="text">
-                            <h3>John Smith</h3>
-                            <p>Marketing Manager, ABC Corp</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <blockquote>
-                        <p>"Working with your team has been an absolute pleasure."</p>
-                    </blockquote>
-                    <div class="testimonial-info">
-                        <!-- Circular icon -->
-                        <div class="icon">
-                            <span>😊</span>
-                        </div>
-                        <div class="text">
-                            <h3>Alice Johnson</h3>
-                            <p>Founder, MNO Foundation</p>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="testimonial-slider" data-aos="slide-left">
+          <div class="testimonial-card">
+            <blockquote>
+              <p>"I am so impressed with your work. Great job!"</p>
+            </blockquote>
+            <div class="testimonial-info">
+              <!-- Circular icon -->
+              <div class="icon">
+                <span>👍</span>
+              </div>
+              <div class="text">
+                <h3>Aarushi Singh</h3>
+                <p>CEO, XYZ Company</p>
+              </div>
             </div>
+          </div>
+
+          <div class="testimonial-card">
+            <blockquote>
+              <p>
+                "Your dedication and expertise have exceeded our expectations."
+              </p>
+            </blockquote>
+            <div class="testimonial-info">
+              <!-- Circular icon -->
+              <div class="icon">
+                <span>🌟</span>
+              </div>
+              <div class="text">
+                <h3>John Smith</h3>
+                <p>Marketing Manager, ABC Corp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <blockquote>
+              <p>"Working with your team has been an absolute pleasure."</p>
+            </blockquote>
+            <div class="testimonial-info">
+              <!-- Circular icon -->
+              <div class="icon">
+                <span>😊</span>
+              </div>
+              <div class="text">
+                <h3>Alice Johnson</h3>
+                <p>Founder, MNO Foundation</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Certificates -->
     <section id="certificates" class="container">
-        <div id="certificate-heading">
-            <h1>Certificates</h1>
+      <div id="certificate-heading">
+        <h1>Certificates</h1>
+      </div>
+      <div class="gallerywrap" data-aos="slide-right">
+        <img src="assets\back.png" id="backbutton" />
+        <div class="gallery">
+          <div>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+          </div>
+          <div>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+            <span><img src="assets\certificate.png" /></span>
+          </div>
         </div>
-        <div class="gallerywrap" data-aos="slide-right">
-            <img src="assets\back.png" id="backbutton">
-            <div class="gallery">
-                <div>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                </div>
-                <div>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                    <span><img src="assets\certificate.png"></span>
-                </div>
-            </div>
-            <img src="assets\next.png" id="nextbutton">
-        </div>
+        <img src="assets\next.png" id="nextbutton" />
+      </div>
     </section>
 
     <!-- FAQ section -->
     <section id="faq_section" class="faq">
-        <div class="container">
-            <h2 id="faq">Frequently Asked Questions</h2>
-            <input type="checkbox" name="detail-one" id="detail-one" />
-            <details open>
-                <summary>
-                    <label for="detail-one">In which year do I study?</label>
-                </summary>
-                <div class="faq-content">
-                    <p>I currently study in 2nd year.</p>
-                </div>
-            </details>
+      <div class="container">
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <input type="checkbox" name="detail-one" id="detail-one" />
+        <details open>
+          <summary>
+            <label for="detail-one">In which year do I study?</label>
+          </summary>
+          <div class="faq-content">
+            <p>I currently study in 2nd year.</p>
+          </div>
+        </details>
 
-            <input type="checkbox" name="detail-two" id="detail-two" />
-            <details open>
-                <summary>
-                    <label for="detail-two">Am I a member of any of the college societies?</label>
-                </summary>
-                <div class="faq-content">
-                    <p>Yes, I am the part of college societies named_____</p>
-                </div>
-            </details>
+        <input type="checkbox" name="detail-two" id="detail-two" />
+        <details open>
+          <summary>
+            <label for="detail-two"
+              >Am I a member of any of the college societies?</label
+            >
+          </summary>
+          <div class="faq-content">
+            <p>Yes, I am the part of college societies named_____</p>
+          </div>
+        </details>
 
-            <input type="checkbox" name="detail-three" id="detail-three" />
-            <details open>
-                <summary>
-                    <label for="detail-three">What are my hobbies?</label>
-                </summary>
-                <div class="faq-content">
-                    <p>I have various hobbies , I like to ___name of hobbies___ </p>
-                </div>
-            </details>
-
-        </div>
+        <input type="checkbox" name="detail-three" id="detail-three" />
+        <details open>
+          <summary>
+            <label for="detail-three">What are my hobbies?</label>
+          </summary>
+          <div class="faq-content">
+            <p>I have various hobbies , I like to ___name of hobbies___</p>
+          </div>
+        </details>
+      </div>
     </section>
 
     <!-- Contact Me Section -->
     <footer class="footer-section" id="contact">
-        <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="cta-text">
-                                <h4>Find me</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fas fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call me</h4>
-                                <span>9876XXXXXX</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="far fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail me</h4>
-                                <span>mail@info.com</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find me</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="copyright-area">
-
-
-            <div class="copyright-text">
-                <p>Copyright &copy; 2024, All Rights Reserved</p>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call me</h4>
+                  <span>9876XXXXXX</span>
+                </div>
+              </div>
             </div>
-
-
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail me</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="copyright-area">
+        <div class="copyright-text">
+          <p>Copyright &copy; 2024, All Rights Reserved</p>
+        </div>
+      </div>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
 
-        AOS.init({
-            offset: 300,
-            duration: 1000
-        });
-        
-        // Preloader script
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(function() {
-                document.querySelector('.preloader').style.display = 'none';
-            }, 2000);
-        });
+      // Preloader script
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          document.querySelector(".preloader").style.display = "none";
+        }, 2000);
+      });
     </script>
-    
-</body>
-
+  </body>
 </html>

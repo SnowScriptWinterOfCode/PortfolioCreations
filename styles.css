@@ -465,7 +465,6 @@ button a:hover{
 
 
 /* Projects */
-
 .about-me,
 .projects{
   background-color: #f4f4f4;
@@ -480,6 +479,26 @@ button a:hover{
   padding: 40px 0;
   background-color: #f4f4f4;
 }
+#project-heading {
+    text-align: center;
+}
+#project-heading h1 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #3498db;
+    position: relative;
+    margin-bottom: 25px;
+}
+#project-heading h1::after {
+    position: absolute;
+    content: ' ';
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    bottom: -8px;
+    background-image: linear-gradient(to right, #3498db, #7cbde9);
+    transform: translateX(-50%);
+}
 
 .project {
     overflow: hidden;
@@ -490,6 +509,7 @@ button a:hover{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     transition: transform background-color 0.2s ease-in-out;
+    height: 238px;
   }
   
   .project:hover {
@@ -524,7 +544,7 @@ button a:hover{
 }
 
 .project button {
-  display: block;
+  display: flex;
   margin: 10px;
   margin-left: 0;
   padding: 8px 16px;
@@ -549,7 +569,12 @@ button a:hover{
   display: flex;
   flex-wrap: wrap;
 }
-
+@media screen and (max-width: 600px) {
+    .project .button {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+}
 /* Scroll-up Button */
 .scroll-up-btn {
   position: fixed;
@@ -1323,4 +1348,7 @@ ul li:nth-child(even) .circle {
       left: -20px;
       transform: translate(-50%, -50%);
   }
+}
+#project-heading,#edu,#certificate-heading,#faq{
+  text-align: center;
 }

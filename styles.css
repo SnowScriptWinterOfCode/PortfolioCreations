@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .preloader {
@@ -101,12 +102,12 @@ input[type="file"] {
 
 /* Place the container to the left */
 .left {
-  left: -81px;
+  right:5%;
 }
 
 /* Place the container to the right */
 .right {
-  left: 50%;
+  left:55%;
 }
 
 /* Add arrows to the left container (pointing right) */
@@ -384,11 +385,11 @@ header {
 
 .text{
   width: 50%;
-  margin-left: 70px;
+  margin-left: 8rem;
 }
 
 .text p{
-  font-size: 1.2rem;
+  font-size: 2rem;
   padding: 0;
   margin-bottom: 0;
 }

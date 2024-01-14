@@ -20,6 +20,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -28,13 +34,13 @@
 
   <body>
     <!-- Preloader -->
-   <div class="loader">
-    <div class="📦"></div>
-    <div class="📦"></div>
-    <div class="📦"></div>
-    <div class="📦"></div>
-    <div class="📦"></div>
-  </div>
+    <div class="loader">
+      <div class="📦"></div>
+      <div class="📦"></div>
+      <div class="📦"></div>
+      <div class="📦"></div>
+      <div class="📦"></div>
+    </div>
 
     <!-- Scroll-to-top button -->
     <div class="scroll-up-btn">
@@ -486,37 +492,175 @@
     <!-- Testimonials  -->
 
     <section id="testimonials" class="testimonial-section">
-      <div class="container">
+      <div class="container space">
         <h2>Testimonials</h2>
-        <div class="test-card">
-          <img src="" alt="Profile Photo" />
-          <h6 class="test-head">XYZ</h6>
-          <p class="test-desc">CEO ABC</p>
-          <div class="test-abt">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-x-twitter"></i>
+
+        <div
+          id="carouselIndicators"
+          class="carousel"
+          data-bs-ride="carousel"
+          data-bs-pause="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
           </div>
-        </div>
-        <div class="test-card">
-          <img src="" alt="Profile Photo" />
-          <h6 class="test-head">XYZ</h6>
-          <p class="test-desc">CEO ABC</p>
-          <div class="test-abt">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-x-twitter"></i>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/test_icons/1.png" alt="Profile Photo" />
+              <h6 class="test-head">
+                Brett Stockley | CEO & Co-founder | Alphabet
+              </h6>
+              <p class="test-desc">
+                "Exceptional contributions from Ariana have elevated our
+                projects, demonstrating unparalleled skill, dedication, and
+                innovation. Truly invaluable to Alphabet."
+              </p>
+              <div class="test-abt">
+                <a href="https://linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin test-profile"></i>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                  <i class="fa-brands fa-github test-profile"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-x-twitter test-profile"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/test_icons/2.png" alt="Profile Photo" />
+              <h6 class="test-head">Riya Jain | Project Admin | Google</h6>
+              <p class="test-desc">
+                "Thrilled with Ariana's outstanding work at Google. Their
+                technical prowess, problem-solving acumen, and collaborative
+                spirit have significantly enriched our projects. A true asset to
+                our team."
+              </p>
+              <div class="test-abt">
+                <a href="https://linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin test-profile"></i>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                  <i class="fa-brands fa-github test-profile"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-x-twitter test-profile"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/test_icons/3.png" alt="Profile Photo" />
+              <h6 class="test-head">
+                Aayush Gupta | Freelancer | GSoC Contributor
+              </h6>
+              <p class="test-desc">
+                "Grateful for the remarkable contributions of Ariana in the
+                open-source community. Their expertise, passion, and commitment
+                shine through, making a lasting impact. A pleasure to
+                collaborate with."
+              </p>
+              <div class="test-abt">
+                <a href="https://linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin test-profile"></i>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                  <i class="fa-brands fa-github test-profile"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-x-twitter test-profile"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/test_icons/4.png" alt="Profile Photo" />
+              <h6 class="test-head">Neha Sharma | HR at Infosys | Recruiter</h6>
+              <p class="test-desc">
+                "Highly commend Ariana for their exceptional skills at Infosys.
+                Their commitment to quality, innovation, and teamwork is
+                commendable, contributing significantly to our technological
+                advancements and project successes."
+              </p>
+              <div class="test-abt">
+                <a href="https://linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin test-profile"></i>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                  <i class="fa-brands fa-github test-profile"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-x-twitter test-profile"></i>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/test_icons/5.png" alt="Profile Photo" />
+              <h6 class="test-head">Prof. Dr. Anubhav Singh | IGDTUW</h6>
+              <p class="test-desc">
+                "I'm immensely proud of Ariana, my student turned accomplished
+                software developer. Their diligence, analytical thinking, and
+                continuous pursuit of knowledge have not only impressed me but
+                set a benchmark for excellence."
+              </p>
+              <div class="test-abt">
+                <a href="https://linkedin.com/" target="_blank">
+                  <i class="fa-brands fa-linkedin test-profile"></i>
+                </a>
+                <a href="https://github.com/" target="_blank">
+                  <i class="fa-brands fa-github test-profile"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <i class="fa-brands fa-x-twitter test-profile"></i>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="test-card">
-          <img src="" alt="Profile Photo" />
-          <h6 class="test-head">XYZ</h6>
-          <p class="test-desc">CEO ABC</p>
-          <div class="test-abt">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="prev"
+          >
+            <i class="fa-solid fa-angles-left swipe"></i>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide="next"
+          >
+            <i class="fa-solid fa-angles-right swipe"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -627,6 +771,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script>
       AOS.init({
         offset: 300,

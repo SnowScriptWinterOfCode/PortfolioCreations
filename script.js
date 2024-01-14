@@ -125,39 +125,6 @@ function displayImage(input) {
   }
 }
 
-//testimonial slider
-// JavaScript for sliding through testimonials
-const slider = document.querySelector(".testimonial-slider");
-
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener("mousedown", (e) => {
-  isDown = true;
-  slider.classList.add("active");
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-
-slider.addEventListener("mouseleave", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-
-slider.addEventListener("mouseup", () => {
-  isDown = false;
-  slider.classList.remove("active");
-});
-
-slider.addEventListener("mousemove", (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 2;
-  slider.scrollLeft = scrollLeft - walk;
-});
-
 // Syncing Active Navbar Links with Scroll
 
 let sec = document.querySelectorAll("section");
@@ -190,7 +157,7 @@ function numIncrease(start, id, speed) {
   incNumRec(start, endNum, elt, speed);
 }
 
-/*A recursive function to increase the number.*/
+// A recursive function to increase the number.
 function incNumRec(i, endNum, elt, speed) {
   if (i <= endNum) {
     elt.innerHTML = i;
@@ -267,3 +234,5 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+// ----------- Testimonials -------------

@@ -1085,8 +1085,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 10%auto;
+  margin: 10% auto;
 }
 
 #backbutton,
@@ -1100,27 +1099,6 @@ h2 {
   transform: scale(1.08);
 }
 
-/* testimonials */
-
-.testimonial-slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  gap: 20px;
-}
-
-.testimonial-card {
-  scroll-snap-align: start;
-  flex: 0 0 auto;
-  width: 300px;
-  background-color: #137494; /* Very light blue color */
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: white; /* Text color set to white */
-}
-
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
@@ -1130,10 +1108,11 @@ body {
   color: #333;
 }
 
-/* Testimonial Section Styles */
+/* ---------------- Testimonial Section ----------- */
+
 .testimonial-section {
-  padding: 50px 0;
   text-align: center;
+  background-color: #e0f7fa;
 }
 
 h2 {
@@ -1141,59 +1120,60 @@ h2 {
   margin-bottom: 30px;
 }
 
-.testimonial-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+.space {
+  width: 85%;
+  padding-bottom: 2rem;
 }
 
-.testimonial-card {
-  background-color: #007bffe0;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 20px;
+.carousel {
+  background-color: #9fc0d672;
+  border-radius: 50px;
 }
 
-blockquote {
-  font-style: italic;
-  margin-bottom: 15px;
+.carousel-item {
+  padding: 3rem 1rem;
 }
 
-.testimonial-info {
-  display: flex;
-  align-items: center;
+.carousel-indicators {
+  bottom: -4px;
 }
 
-.testimonial-info img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
+.carousel-indicators [data-bs-target] {
+  background-color: black;
 }
 
-.text {
-  text-align: left;
+.test-head {
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  font-weight: 600;
 }
 
-/* CSS for circular icons */
-.testimonial-info .icon {
-  width: 60px; /* Adjust size as needed */
-  height: 60px; /* Same as width for a perfect circle */
-  border-radius: 50%; /* Makes it circular */
-  background-color: #ccc; /* Background color of the circle */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+.test-desc {
+  padding: 0px 4.5rem 0px 4.5rem;
 }
 
-/* Adjust the emoji size and color */
-.testimonial-info .icon span {
-  font-size: 36px;
-  color: #fff; /* Change the color of the icon */
+.test-profile {
+  font-size: 1.5rem;
+  padding: 6px;
+  opacity: 0.8;
 }
+
+.test-profile:hover {
+  opacity: 1;
+  font-size: 1.6rem;
+}
+
+.test-abt a {
+  text-decoration: none;
+  color: black;
+}
+
+.swipe {
+  font-size: 3rem;
+  color: black;
+}
+
+/* -------------Testimonials Ends---------- */
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -1448,41 +1428,43 @@ ul li:nth-child(even) .circle {
   animation: squidge-4 var(--duration) ease-in-out infinite alternate;
 }
 .📦:nth-child(2):after {
-  background-color: #1C9FFF;
+  background-color: #1c9fff;
 }
 .📦:nth-child(3):after {
-  background-color: #1FB1FD;
+  background-color: #1fb1fd;
 }
 .📦:nth-child(4):after {
-  background-color: #22C7FB;
+  background-color: #22c7fb;
 }
 .📦:nth-child(5):after {
-  background-color: #23D3FB;
+  background-color: #23d3fb;
 }
 
 @keyframes slide {
   0% {
-    background-color: #1795FF;
+    background-color: #1795ff;
     transform: translatex(0vw);
   }
   100% {
-    background-color: #23D3FB;
+    background-color: #23d3fb;
     transform: translatex(calc(var(--loader-size) - var(--box-size) * 1.25));
   }
 }
 @keyframes color-change {
   0% {
-    background-color: #1795FF;
+    background-color: #1795ff;
   }
   100% {
-    background-color: #23D3FB;
+    background-color: #23d3fb;
   }
 }
 @keyframes flip-1 {
-  0%, 15% {
+  0%,
+  15% {
     transform: rotate(0);
   }
-  35%, 100% {
+  35%,
+  100% {
     transform: rotate(-180deg);
   }
 }
@@ -1495,11 +1477,13 @@ ul li:nth-child(even) .circle {
     transform-origin: center bottom;
     transform: scalex(1.3) scaley(0.7);
   }
-  25%, 20% {
+  25%,
+  20% {
     transform-origin: center bottom;
     transform: scalex(0.8) scaley(1.4);
   }
-  55%, 100% {
+  55%,
+  100% {
     transform-origin: center top;
     transform: scalex(1) scaley(1);
   }
@@ -1509,10 +1493,12 @@ ul li:nth-child(even) .circle {
   }
 }
 @keyframes flip-2 {
-  0%, 30% {
+  0%,
+  30% {
     transform: rotate(0);
   }
-  50%, 100% {
+  50%,
+  100% {
     transform: rotate(-180deg);
   }
 }
@@ -1525,11 +1511,13 @@ ul li:nth-child(even) .circle {
     transform-origin: center bottom;
     transform: scalex(1.3) scaley(0.7);
   }
-  40%, 35% {
+  40%,
+  35% {
     transform-origin: center bottom;
     transform: scalex(0.8) scaley(1.4);
   }
-  70%, 100% {
+  70%,
+  100% {
     transform-origin: center top;
     transform: scalex(1) scaley(1);
   }
@@ -1539,10 +1527,12 @@ ul li:nth-child(even) .circle {
   }
 }
 @keyframes flip-3 {
-  0%, 45% {
+  0%,
+  45% {
     transform: rotate(0);
   }
-  65%, 100% {
+  65%,
+  100% {
     transform: rotate(-180deg);
   }
 }
@@ -1555,11 +1545,13 @@ ul li:nth-child(even) .circle {
     transform-origin: center bottom;
     transform: scalex(1.3) scaley(0.7);
   }
-  55%, 50% {
+  55%,
+  50% {
     transform-origin: center bottom;
     transform: scalex(0.8) scaley(1.4);
   }
-  85%, 100% {
+  85%,
+  100% {
     transform-origin: center top;
     transform: scalex(1) scaley(1);
   }
@@ -1569,10 +1561,12 @@ ul li:nth-child(even) .circle {
   }
 }
 @keyframes flip-4 {
-  0%, 60% {
+  0%,
+  60% {
     transform: rotate(0);
   }
-  80%, 100% {
+  80%,
+  100% {
     transform: rotate(-180deg);
   }
 }
@@ -1585,11 +1579,13 @@ ul li:nth-child(even) .circle {
     transform-origin: center bottom;
     transform: scalex(1.3) scaley(0.7);
   }
-  70%, 65% {
+  70%,
+  65% {
     transform-origin: center bottom;
     transform: scalex(0.8) scaley(1.4);
   }
-  100%, 100% {
+  100%,
+  100% {
     transform-origin: center top;
     transform: scalex(1) scaley(1);
   }
@@ -1598,4 +1594,3 @@ ul li:nth-child(even) .circle {
     transform: scalex(1.3) scaley(0.7);
   }
 }
-

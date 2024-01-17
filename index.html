@@ -496,7 +496,7 @@
         <h2>Testimonials</h2>
 
         <div
-          id="carouselIndicators"
+          id="testimonialCarousel"
           class="carousel"
           data-bs-ride="carousel"
           data-bs-pause="false"
@@ -648,7 +648,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselIndicators"
+            data-bs-target="#testimonialCarousel"
             data-bs-slide="prev"
           >
             <i class="fa-solid fa-angles-left swipe"></i>
@@ -656,7 +656,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselIndicators"
+            data-bs-target="#testimonialCarousel"
             data-bs-slide="next"
           >
             <i class="fa-solid fa-angles-right swipe"></i>
@@ -669,22 +669,114 @@
     <section id="certificates" class="container">
       <div id="certificate-heading" class="container">
         <h1>Certificates</h1>
-      </div>
-      <div class="gallerywrap" data-aos="slide-right">
-        <img src="assets\back.png" id="backbutton" />
-        <div class="gallery">
-          <div>
-            <span><img src="assets\certificate.png" /></span>
-            <span><img src="assets\certificate.png" /></span>
-            <span><img src="assets\certificate.png" /></span>
+        <div
+        id="certificateCarousel"
+        class="carousel"
+        data-bs-ride="carousel"
+        data-bs-pause="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h6 class="test-head">
+             Certificate 1
+            </h6>
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. 
+              Turpis egestas sed tempus urna et. Commodo elit at imperdiet dui accumsan sit amet.  
+              Auctor augue mauris augue neque gravida in. Felis bibendum ut tristique et. 
+              Urna id volutpat lacus laoreet. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
+            </p>
           </div>
-          <div>
-            <span><img src="assets\certificate.png" /></span>
-            <span><img src="assets\certificate.png" /></span>
-            <span><img src="assets\certificate.png" /></span>
+          <div class="carousel-item">
+            <h6 class="test-head">Certificate 2</h6>
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. 
+               Turpis egestas sed tempus urna et. Commodo elit at imperdiet dui accumsan sit amet.  
+               Auctor augue mauris augue neque gravida in. Felis bibendum ut tristique et. 
+               Urna id volutpat lacus laoreet. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h6 class="test-head">
+              Certificate 3
+            </h6>
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. 
+              Turpis egestas sed tempus urna et. Commodo elit at imperdiet dui accumsan sit amet.  
+              Auctor augue mauris augue neque gravida in. Felis bibendum ut tristique et. 
+              Urna id volutpat lacus laoreet. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h6 class="test-head">Certificate 4</h6>
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. 
+              Turpis egestas sed tempus urna et. Commodo elit at imperdiet dui accumsan sit amet.  
+              Auctor augue mauris augue neque gravida in. Felis bibendum ut tristique et. 
+              Urna id volutpat lacus laoreet. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h6 class="test-head">Certificate 5</h6>
+            <p class="test-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut. 
+               Turpis egestas sed tempus urna et. Commodo elit at imperdiet dui accumsan sit amet.  
+               Auctor augue mauris augue neque gravida in. Felis bibendum ut tristique et. 
+               Urna id volutpat lacus laoreet. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum a.
+            </p>
           </div>
         </div>
-        <img src="assets\next.png" id="nextbutton" />
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#certificateCarousel"
+          data-bs-slide="prev"
+        >
+          <i class="fa-solid fa-angles-left swipe"></i>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#certificateCarousel"
+          data-bs-slide="next"
+        >
+          <i class="fa-solid fa-angles-right swipe"></i>
+        </button>
+      </div>
       </div>
     </section>
 
@@ -778,8 +870,8 @@
     ></script>
     <script>
       AOS.init({
-        offset: 300,
-        duration: 1000,
+        offset: 200,
+        duration: 900,
       });
 
       // Preloader script

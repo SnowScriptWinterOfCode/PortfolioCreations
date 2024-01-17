@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .faqs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, lightpink, violet, skyblue,yellow); /* Change the gradient colors as needed */
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite; /* Adjust the animation duration as needed */
+        }
+
+        @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+
+        .containerfaqs {
+            margin: 0 40px;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .containerfaqs h1 {
+            color: #333;
+            font-size: 2.5em;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: black;
+
+        }
+
+        .containerfaqs .tabs {
+            position: relative;
+            background: #fff;
+            padding: 0 20px 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .containerfaqs .tabs input {
+            appearance: none;
+        }
+
+        .containerfaqs .tabs label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .containerfaqs .tabs label::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            font-size: 2em;
+            color: rgba(0, 0, 0, 0.1);
+            transition: transform 1s;
+        }
+
+        .containerfaqs .tabs:hover label::after {
+            color: #333;
+        }
+
+        .containerfaqs .tabs input:checked ~ label::after {
+            transform: rotate(135deg);
+            color: #fff;
+        }
+
+        .containerfaqs .tabs input:checked ~ label h2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 8em;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .containerfaqs .tabs label h2 {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.25em;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .containerfaqs .tabs input:checked ~ label h2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 8em;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .containerfaqs .tabs:nth-child(2) label h2 {
+            background: linear-gradient(135deg, #70f570, #49c628);
+        }
+
+        .containerfaqs .tabs:nth-child(3) label h2 {
+            background: linear-gradient(135deg, #3c8ce7, #00eaff);
+        }
+
+        .containerfaqs .tabs:nth-child(4) label h2 {
+            background: linear-gradient(135deg, #ff96f9, #c32bac);
+        }
+
+        .containerfaqs .tabs:nth-child(5) label h2 {
+            background: linear-gradient(135deg, #fd6e6a, #ffc600);
+        }
+
+        .containerfaqs .tabs:nth-child(6) label h2 {
+            background: linear-gradient(135deg, #6c8bd8, #83719a);
+        }
+
+        .containerfaqs .tabs label h3 {
+            position: relative;
+            font-weight: 500;
+            color: #333;
+            z-index: 10;
+        }
+
+        .containerfaqs .tabs .contentfaqs{
+            max-height: 0;
+            transition: 1s;
+            overflow: hidden;
+        }
+
+        .containerfaqs .tabs input:checked  ~ .contentfaqs{
+            max-height: 100vh;
+        }
+
+        .containerfaqs .tabs .contentfaqs p{
+            position: relative;
+            padding: 10px 0;
+            color: #333;
+            z-index: 10;
+        }
+
+        .containerfaqs .tabs input:checked ~ label h3 {
+            background-color: #fff;
+            padding: 2px 10px;
+            color: #333;
+            border-radius: 2px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .containerfaqs .tabs input:checked  ~ .contentfaqs p {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section class="faqs" id="faqs-section">
+        <div class="containerfaqs">
+            <h1><span style="color: black;">Frequently Asked Questions?</span></h1>
+
+            <div class="tabs">
+                <input type="radio" name="acc" id="acc1">
+                <label for="acc1">
+                    <h2>01</h2>
+                    <h3>What is Portfolio?</h3>
+                </label>
+                <div class="contentfaqs"><p>A portfolio is a curated collection of work samples, projects, or achievements that showcase an individual's skills, abilities, and accomplishments. In the context of a professional or creative career, a portfolio serves as a visual representation of a person's capabilities and expertise.</p></div>
+            </div>
+
+            <div class="tabs">
+                <input type="radio" name="acc" id="acc2">
+                <label for="acc2">
+                    <h2>02</h2>
+                    <h3>What is the purpose of a portfolio?</h3>
+                </label>
+                <div class="contentfaqs"><p>A portfolio showcases your skills, experiences, and projects to potential employers or clients. It provides a visual representation of your work and demonstrates your expertise in a particular field.</p></div>
+            </div>
+
+            <div class="tabs">
+                <input type="radio" name="acc" id="acc3">
+                <label for="acc3">
+                    <h2>03</h2>
+                    <h3>What should be included in a portfolio?</h3>
+                </label>
+                <div class="contentfaqs"><p>Your portfolio should include experience, a variety of projects that highlight your skills. This may include examples of web design, graphics, illustrations, etc. Achievements, soft skills, position of responsibilities, extra-curricular activities. And much more as per your interests.</p></div>
+            </div>
+
+            <div class="tabs">
+                <input type="radio" name="acc" id="acc4">
+                <label for="acc4">
+                    <h2>04</h2>
+                    <h3>How often should I update my portfolio?</h3>
+                </label>
+                <div class="contentfaqs"><p>Regular updates are crucial to reflect your latest work and skills. Aim to update your portfolio at least every few months, or whenever you complete a significant project.</p></div>
+            </div>
+
+            <div class="tabs">
+                <input type="radio" name="acc" id="acc5">
+                <label for="acc5">
+                    <h2>05</h2>
+                    <h3> How can my portfolio help in job applications or freelance opportunities?</h3>
+                </label>
+                <div class="contentfaqs"><p>Your portfolio is a powerful tool for attracting potential employers or clients. It allows them to assess your skills, style, and versatility, making it easier for them to visualize how you can contribute to their projects.</p></div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

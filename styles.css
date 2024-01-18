@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap")
 html {
   scroll-behavior: smooth;
 }
@@ -149,6 +149,183 @@ input[type="file"] {
   position: relative;
   border-radius: 0.8rem;
 }
+
+/**********FAQs section start************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.faqs {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 120vh;
+  background: linear-gradient(45deg, lightpink, skyblue,  #b0ccdf, #d0eafa, lightpink); /* Change the gradient colors as needed */
+  border-radius: 0 !important;
+} 
+
+
+.containerfaqs {
+  margin: 0 40px;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.containerfaqs h1 {
+  color: #333;
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: black;
+
+}
+
+
+.containerfaqs .tabss {
+  position: relative;
+  background: #fff;
+  padding: 15px 10px 0;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  overflow: hidden;  
+}
+
+.containerfaqs .tabss input {
+  appearance: none;
+}
+
+.containerfaqs .tabss label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.containerfaqs .tabss label::after {
+  content: '+';
+  position: absolute;
+  right: 5px;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+}
+
+.containerfaqs .tabss:hover label::after {
+  color: #333;
+}
+
+.containerfaqs .tabss input:checked ~ label::after {
+  transform: rotate(135deg);
+  color: hidden;
+  overflow: hidden;
+}
+
+
+
+.containerfaqs .tabss input:checked ~ label h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 8em;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.containerfaqs .tabss label h2 {
+  width: 50px;
+  height: 50px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px;
+  margin-right: 60px;
+  margin-top: 15px;
+  font-weight: 800;
+}
+
+.containerfaqs .tabss input:checked ~ label h2{
+  position: absolute;
+  left: -10px;
+  width: 290%;
+  height: 320%;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 9em;
+  justify-content: flex-end;
+  margin-top: 10px; 
+}
+
+.containerfaqs .tabss:nth-child(2) label h2 {
+  background: linear-gradient(135deg, #70f570, #49c628);
+}
+
+.containerfaqs .tabss:nth-child(3) label h2 {
+  background: linear-gradient(135deg, #3c8ce7, #00eaff);
+}
+
+.containerfaqs .tabss:nth-child(4) label h2 {
+  background: linear-gradient(135deg, #ff96f9, #c32bac);
+}
+
+.containerfaqs .tabss:nth-child(5) label h2 {
+  background: linear-gradient(135deg, #fd6e6a, #ffc600);
+}
+
+.containerfaqs .tabss:nth-child(6) label h2 {
+  background: linear-gradient(135deg, #6c8bd8, #83719a);
+}
+
+.containerfaqs .tabss label h3 {
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+  margin-left: -50px;
+  margin-top: -5px;
+  font-weight: 500;
+}
+
+.containerfaqs .tabss .contentfaqs{
+  max-height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.containerfaqs .tabss input:checked  ~ .contentfaqs{
+  max-height: 100vh;
+}
+
+.containerfaqs .tabss .contentfaqs p{
+  position: relative;
+  padding: 10px 0;
+  color: #333;
+  z-index: 10;
+  font-weight: 600;
+}
+
+.containerfaqs .tabss input:checked ~ label h3 {
+  background-color: #fff;
+  padding: 2px 10px;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-top: 25px;
+}
+
+.containerfaqs .tabss input:checked  ~ .contentfaqs p {
+  color: black;
+}
+/*************FAQs section ending********************/
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -513,7 +690,7 @@ input[type="file"] {
 #project-heading,
 #edu,
 #certificate-heading,
-#faq {
+#faqs {
   text-align: center;
 }
 
@@ -668,7 +845,7 @@ input[type="file"] {
 }
 
 /* FAQ section styling */
-.faq {
+.faqs {
   background-color: #f5f5f5;
   padding: 50px 0;
   text-align: left;

@@ -234,3 +234,37 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+
+// ----------Toggle Scroll Bar ------------
+
+window.addEventListener("scroll", () => {
+  showScroll();
+});
+
+const onScrollStop = (showScroll) => {
+  let scrolling;
+  window.addEventListener(
+    "scroll",
+    () => {
+      clearTimeout(scrolling);
+      scrolling = setTimeout(() => {
+        showScroll();
+      }, 500);
+    },
+    false
+  );
+};
+
+onScrollStop(() => {
+  hideScroll();
+});
+
+function showScroll() {
+  let doc = document.querySelector("body");
+  doc.classList.remove("hide-scroll");
+}
+
+function hideScroll() {
+  let doc = document.querySelector("body");
+  doc.classList.add("hide-scroll");
+}

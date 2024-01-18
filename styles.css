@@ -263,6 +263,7 @@ input[type="file"] {
   font-size: 9em;
   justify-content: flex-end;
   margin-top: 10px; 
+  border-radius: 0;
 }
 
 .containerfaqs .tabss:nth-child(2) label h2 {

@@ -163,7 +163,7 @@ input[type="file"] {
   justify-content: center;
   align-items: center; 
   min-height: 110vh;
-  background: linear-gradient(45deg, lightpink, skyblue,  #b0ccdf, #d0eafa, lightpink); /* Change the gradient colors as needed */
+  background: linear-gradient(45deg, skyblue,  #b0ccdf, #d0eafa, skyblue); /* Change the gradient colors as needed */
   border-radius: 0 !important;
 } 
 

@@ -163,7 +163,7 @@ input[type="file"] {
   justify-content: center;
   align-items: center; 
   min-height: 110vh;
-  background: linear-gradient(45deg, skyblue,  #b0ccdf, #d0eafa, skyblue); /* Change the gradient colors as needed */
+  background: linear-gradient(45deg, skyblue,  #d0eafa, #b0ccdf, #d0eafa, skyblue); /* Change the gradient colors as needed */
   border-radius: 0 !important;
 } 
 
@@ -330,6 +330,70 @@ input[type="file"] {
   color: black;
 }
 /*************FAQs section ending********************/
+
+/************Feedback section starting********************/
+.feedbacksssection {
+  min-height: 100vh;
+  background: linear-gradient(45deg, skyblue, #d0eafa, #b2c9d8, #d0eafa, skyblue); /* Change the gradient colors as needed */
+  border-radius: 0 !important;
+  padding: 20px;
+}
+
+.feedbacksssection h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedbacksssection h1 span {
+  text-decoration: underline;
+  text-decoration-color: #3252a8;
+  color: #3252a8;
+}
+
+.feedbacksssection .contact-right {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+.feedbacksssection form {
+  margin-left: 15px;
+}
+
+
+.feedbacksssection textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid skyblue;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: larger;
+  background: linear-gradient( #e3eef5, #eff2f4);
+}
+
+.feedbacksssection button {
+  background-color: #3252a8;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedbacksssection button:hover {
+  background-color: #1a2c5b;
+}
+
+/* Message Styles */
+.feedbacksssection #msg {
+  display: block;
+  margin-top: 15px;
+  color: #1a2c5b;
+  font-weight: bold;
+}
+
+/************Feedback section ending********************/
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {

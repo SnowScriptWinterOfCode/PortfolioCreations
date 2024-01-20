@@ -820,6 +820,48 @@
   </section>
     <!----FAQ Section ending------------->
 
+
+    <!-----FeedBack section starting------>
+    <section class="feedbacksssection">
+      <div>  
+        <h1><span class="feedback-title">Feedback</span></h1>
+        <div class="contact-right">
+            <form class="feedback-form" name="submit-to-google-sheet">
+                <h4 style="color:#3252a8; font-weight: 600;">Your Name</h4><p><textarea type="text" name="Name" placeholder="Your Name" required></textarea></p>
+                <h4 style="color:#3252a8; font-weight: 600;">Your Email</h4><p><textarea type="email" name="Email" placeholder="Your email" required></textarea></p>
+                <h4 style="color:#3252a8; font-weight: 600;">Feedback</h4><p><textarea name="Message" rows="6" placeholder="Feedback"></textarea></p>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            <span class="feedback-msg" id="msg"></span>
+        </div>
+      </div>
+    </section>
+    
+
+  <!------------------------form setup for taking response-------------------------------cont scriptURL: link of excel after deploying------------->  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkeJ4XLJecSd8-vyqHQwPB_y05UvF5GBeNVy4jnbnfFFbbxXhEaRkrbxMCmKmUv4iPFw/exec'    
+  const form = document.forms['submit-to-google-sheet']
+ 
+  const msg = document.getElementById("msg")
+
+ 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Feedback sent successfully"
+          setTimeout(function(){
+              msg.innerHTML = ""
+          },5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+    <!-----FeedBack section starting------>
+
     <!-- Contact Me Section -->
     <footer class="footer-section" id="contact">
       <div class="container">

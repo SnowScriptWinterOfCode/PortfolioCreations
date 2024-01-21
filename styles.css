@@ -1141,6 +1141,8 @@ h2 {
   font-size: 40px;
   color: #0277bd;
   margin-bottom: 10px;
+  margin-right: 30px;
+
   display: block;
 }
 
@@ -1196,6 +1198,7 @@ h2 {
   font-size: 40px;
   color: #0277bd;
   margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 .skill span {

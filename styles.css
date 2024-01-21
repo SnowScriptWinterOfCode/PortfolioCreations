@@ -1472,7 +1472,7 @@ h2 {
   width: 50%;
   height: auto;
   padding: 15px 20px;
-  box-shadow: 1px 1px 25px #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-bottom: 20px;
   position: relative;
@@ -1494,23 +1494,23 @@ h2 {
 
 .exp ul li .title {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 300;
   color: #3498db;
   margin-bottom: 6px;
 }
 
 .exp ul li p {
   font-size: 15px;
-  font-weight: 600;
-  color: #48aaeb;
+  font-weight: 200;
+  color: #000000;
   margin: 5px 0;
   line-height: 23px;
 }
 
 ul li a {
-  font-size: 15px;
-  font-weight: 700;
-  color: #000;
+  font-size: 14px;
+  font-weight: 150;
+  color: #ff0000;
   text-decoration: none;
 }
 
@@ -1529,12 +1529,12 @@ ul li .date {
   width: 135px;
   height: 35px;
   border-radius: 10px;
-  color: #000;
-  background-image: linear-gradient(to right, #3498db, #7cbde9);
+  color: #ffffff;
+  background-image: linear-gradient(to right, #3498db, #5bb2eb);
   display: grid;
   place-items: center;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 550;
 }
 
 ul li:nth-child(odd) .date {

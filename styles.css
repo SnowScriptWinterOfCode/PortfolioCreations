@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -155,25 +156,31 @@ input[type="file"] {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .faqs {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   min-height: 110vh;
-  background: linear-gradient(45deg, skyblue,  #d0eafa, #b0ccdf, #d0eafa, skyblue); /* Change the gradient colors as needed */
+  background: linear-gradient(
+    45deg,
+    skyblue,
+    #d0eafa,
+    #b0ccdf,
+    #d0eafa,
+    skyblue
+  ); /* Change the gradient colors as needed */
   border-radius: 0 !important;
-} 
-
+}
 
 .containerfaqs {
   margin: 0 40px;
   max-width: 650px;
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .containerfaqs h1 {
@@ -182,9 +189,7 @@ input[type="file"] {
   text-align: center;
   text-decoration: underline;
   text-decoration-color: black;
-
 }
-
 
 .containerfaqs .tabss {
   position: relative;
@@ -193,7 +198,7 @@ input[type="file"] {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   overflow: hidden;
-  padding-right: 70px; 
+  padding-right: 70px;
 }
 
 .containerfaqs .tabss input {
@@ -208,13 +213,12 @@ input[type="file"] {
 }
 
 .containerfaqs .tabss label::after {
-  content: '+';
+  content: "+";
   position: absolute;
   right: -35px;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.1);
   transition: transform 1s;
-  
 }
 
 .containerfaqs .tabss:hover label::after {
@@ -226,8 +230,6 @@ input[type="file"] {
   color: hidden;
   overflow: hidden;
 }
-
-
 
 .containerfaqs .tabss input:checked ~ label h2 {
   position: absolute;
@@ -256,7 +258,7 @@ input[type="file"] {
   font-weight: 800;
 }
 
-.containerfaqs .tabss input:checked ~ label h2{
+.containerfaqs .tabss input:checked ~ label h2 {
   position: absolute;
   left: -10px;
   width: 290%;
@@ -264,7 +266,7 @@ input[type="file"] {
   color: rgba(255, 255, 255, 0.2);
   font-size: 9em;
   justify-content: flex-end;
-  margin-top: 10px; 
+  margin-top: 10px;
   border-radius: 0;
 }
 
@@ -298,17 +300,17 @@ input[type="file"] {
   font-size: larger;
 }
 
-.containerfaqs .tabss .contentfaqs{
+.containerfaqs .tabss .contentfaqs {
   max-height: 0;
   transition: 0.5s;
   overflow: hidden;
 }
 
-.containerfaqs .tabss input:checked  ~ .contentfaqs{
+.containerfaqs .tabss input:checked ~ .contentfaqs {
   max-height: 100vh;
 }
 
-.containerfaqs .tabss .contentfaqs p{
+.containerfaqs .tabss .contentfaqs p {
   position: relative;
   padding: 10px 0;
   color: #333;
@@ -326,7 +328,7 @@ input[type="file"] {
   margin-top: 25px;
 }
 
-.containerfaqs .tabss input:checked  ~ .contentfaqs p {
+.containerfaqs .tabss input:checked ~ .contentfaqs p {
   color: black;
 }
 /*************FAQs section ending********************/
@@ -334,7 +336,14 @@ input[type="file"] {
 /************Feedback section starting********************/
 .feedbacksssection {
   min-height: 100vh;
-  background: linear-gradient(45deg, skyblue, #d0eafa, #b2c9d8, #d0eafa, skyblue); /* Change the gradient colors as needed */
+  background: linear-gradient(
+    45deg,
+    skyblue,
+    #d0eafa,
+    #b2c9d8,
+    #d0eafa,
+    skyblue
+  ); /* Change the gradient colors as needed */
   border-radius: 0 !important;
   padding: 20px;
 }
@@ -360,7 +369,6 @@ input[type="file"] {
   margin-left: 15px;
 }
 
-
 .feedbacksssection textarea {
   width: calc(100% - 20px);
   padding: 10px;
@@ -369,7 +377,7 @@ input[type="file"] {
   border-radius: 5px;
   font-weight: 500;
   font-size: larger;
-  background: linear-gradient( #e3eef5, #eff2f4);
+  background: linear-gradient(#e3eef5, #eff2f4);
 }
 
 .feedbacksssection button {
@@ -1546,6 +1554,10 @@ ul li:nth-child(odd) .circle {
 ul li:nth-child(even) .circle {
   left: -21px;
   transform: translate(-50%, -50%);
+}
+
+.contact-items {
+  text-decoration: none;
 }
 
 /* Media Queries  */

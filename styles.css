@@ -716,32 +716,35 @@ input[type="file"] {
 }
 
 /* ------------------About Me Section ----------------- */
-
 #about {
   background-color: #e0f7fa;
-}
-
-.line {
-  display: flex;
-  margin-left: 2rem;
-  font-size: 1.1rem;
-  text-shadow: 0.5px 0.4px black;
+  padding: 20px; 
 }
 
 #xp {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap; 
   justify-content: space-between;
-  margin-top: 3rem;
 }
 
 .vab-box {
+  flex: 0 0 calc(33.33% - 20px); 
   background-color: white;
-  padding: 2rem 3rem;
+  padding: 2rem;
   font-size: 1.3rem;
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .num-box {
@@ -751,6 +754,13 @@ input[type="file"] {
 .num-box::after {
   content: "+";
 }
+
+@media (max-width: 767px) {
+  .vab-box {
+    flex: 0 0 100%; 
+  }
+}
+
 
 /* ----------------About Me Section Ends------------------- */
 
@@ -775,7 +785,7 @@ input[type="file"] {
 /* Projects */
 .about-me,
 .projects {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   padding: 40px 0;
 }
 
@@ -785,7 +795,7 @@ input[type="file"] {
 
 #projects {
   padding: 40px 0;
-  background-color: #f4f4f4;
+  background-color: #f9fbfc;
 }
 #project-heading {
   text-align: center;
@@ -812,17 +822,21 @@ input[type="file"] {
   overflow: hidden;
   background-color: #fff;
   padding: 20px;
-  margin: 2rem;
+  margin: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  transition: transform background-color 0.2s ease-in-out;
-  height: 238px;
+  max-width: calc(100% - 40px);
+  transition: transform background-color 0.5s ease-in-out;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: fff;
 }
 
 .project:hover {
   transform: scale(1.05);
   background-color: #f6f6f6;
+  transition: transform background-color 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 918px) {
@@ -834,8 +848,15 @@ input[type="file"] {
   }
 
   .project {
-    flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
+    flex: 0 0 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 600px){
+  .project{
+    margin: 20px 0;
+    max-width: calc(100% - 50px);
   }
 }
 
@@ -853,13 +874,16 @@ input[type="file"] {
   display: flex;
   margin: 10px;
   margin-left: 0;
-  padding: 8px 16px;
+  padding: 12px 20px;
   background-color: #3498db;
   border: none;
   border-radius: 4px;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project button:hover {
@@ -876,11 +900,12 @@ input[type="file"] {
   flex-wrap: wrap;
 }
 @media screen and (max-width: 600px) {
-  .project .button {
+  .project button {
     width: 100%;
     margin: 5px 0;
   }
 }
+
 /* Scroll-up Button */
 .scroll-up-btn {
   position: fixed;
@@ -991,83 +1016,7 @@ details:has(input:checked) label::before {
   transition: rotate 200ms ease-out;
 }
 
-.about-me,
-.projects {
-  background-color: #f4f4f4;
-  padding: 40px 0;
-}
-.box {
-  display: flex;
-}
 
-#projects {
-  padding: 40px 0;
-  background-color: #f4f4f4;
-}
-
-.project {
-  overflow: hidden;
-  background-color: #fff;
-  padding: 20px;
-  margin: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
-  transition: transform 0.5s ease-in-out;
-}
-
-.project:hover {
-  transform: scale(1.08);
-  background-color: #f6f6f6;
-}
-
-@media screen and (max-width: 918px) {
-  .box {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .project {
-    flex: 0 0 calc(100% - 20px);
-    max-width: calc(100% - 20px);
-  }
-}
-
-.project h3 {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: larger;
-  margin-top: 0;
-}
-
-.project p {
-  margin-bottom: 10px;
-}
-
-.project button {
-  display: block;
-  margin: 10px;
-  margin-left: 0;
-  padding: 8px 16px;
-  background-color: #3498db;
-  border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.project button:hover {
-  background-color: #2980b9;
-}
-.project button a {
-  text-decoration: none;
-  color: #fff;
-}
-.project .buttons {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .scroll-up-btn {
   position: fixed;

@@ -96,35 +96,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-let scrollContainer = document.querySelector(".gallery");
-let backBtn = document.getElementById("backbutton");
-let nextBtn = document.getElementById("nextbutton");
-
-scrollContainer.addEventListener("wheel", (evt) => {
-  // evt.preventDefault();
-  scrollContainer.scrollleft += evt.deltaY;
-});
-
-nextBtn.addEventListener("click", () => {
-  scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 370;
-});
-backBtn.addEventListener("click", () => {
-  scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 370;
-});
-
-function displayImage(input) {
-  var file = input.files[0];
-  if (file) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      document.getElementById("uploadedImage").src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  }
-}
-
 // Syncing Active Navbar Links with Scroll
 
 let sec = document.querySelectorAll("section");
@@ -268,3 +239,64 @@ function hideScroll() {
   let doc = document.querySelector("body");
   doc.classList.add("hide-scroll");
 }
+
+// -------- Certificate Section ------------
+
+let certImage = document.getElementById("c-img");
+let cDesc = document.getElementById("c-desc");
+let cIndex = 0;
+
+let certified = [
+  {
+    filePath: "/assets/certificates/c1.jpeg",
+    desc: "Achieved by showcasing innovative problem-solving skills and collaborative teamwork in a national hackathon competition. This certificate attests to my ability to devise creative solutions and contribute effectively to complex web development challenges.",
+  },
+  {
+    filePath: "/assets/certificates/c2.jpeg",
+    desc: "Secured by emerging as a top performer in a national hackathon competition, showcasing adept problem-solving and collaboration skills. This certificate underscores my prowess as a Java and web developer, contributing significantly to the success of the team and solving intricate challenges.",
+  },
+  {
+    filePath: "/assets/certificates/c3.jpeg",
+    desc: "Awarded for outstanding performance during a challenging web development internship. This certificate reflects my practical experience, adaptability, and ability to contribute meaningfully to real-world projects, gaining valuable insights into the professional landscape.",
+  },
+  {
+    filePath: "/assets/certificates/c4.jpeg",
+    desc: "Earned through the successful completion of an intensive web development course, demonstrating proficiency in various programming languages, frameworks, and best practices. This certification validates my commitment to continuous learning and staying abreast of the latest industry trends.",
+  },
+  {
+    filePath: "/assets/certificates/c5.jpeg",
+    desc: "Attained upon successfully finishing a comprehensive Java programming course, affirming my proficiency in this language. This certification signifies my commitment to mastering Java, a fundamental skill for any web developer, and serves as a testament to my dedication to continuous learning in the ever-evolving tech landscape.",
+  },
+  {
+    filePath: "/assets/certificates/c6.jpeg",
+    desc: "Awarded for the successful completion of an intensive web development course, emphasizing proficiency in various web technologies and frameworks. This certificate reinforces my expertise in crafting dynamic and responsive web applications, reflecting my commitment to staying current with the latest advancements in web development.",
+  },
+];
+
+function setCertificate() {
+  cDesc.style.opacity = 0;
+  certImage.style.opacity = 0;
+  cDesc.style.transform = "translate(0px, 10px)";
+  certImage.style.transform = `rotateY(0deg)`;
+  setTimeout(() => {
+    certImage.style.transform = `rotateY(360deg)`;
+    cDesc.style.transform = "translate(0px, 0px)";
+    cDesc.style.opacity = 1;
+    certImage.style.opacity = 1;
+    certImage.src = certified[cIndex].filePath;
+    cDesc.innerText = certified[cIndex].desc;
+  }, 1000);
+}
+
+function changeContent() {
+  if (cIndex <= 4) {
+    cIndex += 1;
+  } else {
+    cIndex = 0;
+  }
+  setCertificate();
+}
+
+window.addEventListener("load", () => {
+  setInterval(changeContent, 7000);
+});

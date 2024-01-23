@@ -27,6 +27,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" id="theme" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="icon" href="assets/head_icon.png" />
@@ -41,6 +42,16 @@
       <div class="📦"></div>
       <div class="📦"></div>
       <div class="📦"></div>
+    </div>
+
+    <!-- Switch Mode Light&Dark -->
+
+    <div id="mode">
+      <input type="checkbox" id="toggle-mode" />
+      <label for="toggle-mode" id="slider">
+        <i class="fa-regular fa-sun iswitch" id="light"></i>
+        <i class="fa-regular fa-moon iswitch" id="dark"></i>
+      </label>
     </div>
 
     <!-- Scroll-to-top button -->
@@ -117,7 +128,7 @@
         <div class="icons">
           <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
         </div>
         <button class="btn_resume">
           <a href="assets/Resume.pdf" target="_blank">Resume</a>
@@ -174,23 +185,37 @@
           </p>
         </div>
 
-        <section id="about">
-          <div id="xp">
-            <div class="vab-box" data-aos="flip-left" data-aos-easing="ease-out-cubic">
-              <div class="num-box" id="inc">26</div>
-              <div class="text-box">Projects Created</div>
-            </div>
-            <div class="vab-box" data-aos="flip-left" data-aos-delay="500" data-aos-easing="ease-out-cubic">
-              <div class="num-box" id="speed">25000</div>
-              <div class="text-box">Lines of Code Written</div>
-            </div>
-            <div class="vab-box" data-aos="flip-left" data-aos-delay="1000" data-aos-easing="ease-out-cubic">
-              <div class="num-box" id="tick">14</div>
-              <div class="text-box">Hackathons Participated</div>
-            </div>
+        <div id="xp">
+          <div
+            class="vab-box"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+          >
+            <div class="num-box" id="inc">26</div>
+            <div class="text-box">Projects Created</div>
           </div>
-        </section>
-        
+          <div
+            class="vab-box"
+            data-aos="flip-left"
+            data-aos-delay="500"
+            data-aos-easing="ease-out-cubic"
+          >
+            <div class="num-box" id="speed">25000</div>
+            <div class="text-box">Lines of Code Written</div>
+          </div>
+          <div
+            class="vab-box"
+            data-aos="flip-left"
+            data-aos-delay="1000"
+            data-aos-easing="ease-out-cubic"
+          >
+            <div class="num-box" id="tick">14</div>
+            <div class="text-box">Hackathons Participated</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Skills section -->
     <section id="skill_section" class="skills">
       <div class="container">
@@ -338,13 +363,13 @@
             <div class="project" data-aos="fade-right">
               <h3>Project 2</h3>
               <p>
-                Built a full-stack web app with Node.js and MongoDB, featuring
-                user authentication and third-party API integration for enhanced
+                Built a full-stack web app with Node.js, featuring user
+                authentication and third-party API integration for enhanced
                 functionality.
               </p>
               <p>
                 <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
-                Node.js
+                Node.js, MongoDB
               </p>
               <div class="buttons">
                 <button>
@@ -397,13 +422,13 @@
             <div class="project" data-aos="fade-left">
               <h3>Project 4</h3>
               <p>
-                Built a mobile-responsive website using React.js. Integrated
-                state management for a seamless user interface and employed
-                RESTful API communication.
+                Social networking app for sharing multimedia content. Features
+                include user profiles, posts, comments, and real-time
+                notifications.
               </p>
               <p>
                 <strong>Skills and Tools:</strong> HTML, CSS, JavaScript,
-                React.js
+                Angular, Flask, MySQL
               </p>
               <div class="buttons">
                 <button>
@@ -684,14 +709,7 @@
         </div>
 
         <h1>
-          <span
-            style="
-              text-decoration: underline;
-              text-decoration-color: #3252a8;
-              color: #3252a8;
-            "
-            >Frequently Asked Questions?</span
-          >
+          <span id="faq-head">Frequently Asked Questions?</span>
         </h1>
 
         <div class="tabss" data-aos="zoom-in">
@@ -734,7 +752,7 @@
         <h1><span class="feedback-title">Feedback</span></h1>
         <div class="contact-right">
           <form class="feedback-form" name="submit-to-google-sheet">
-            <h4 style="color: #3252a8; font-weight: 600">Your Name</h4>
+            <h4 id="feed-item">Your Name</h4>
             <p>
               <textarea
                 type="text"
@@ -744,7 +762,7 @@
                 data-aos="zoom-in"
               ></textarea>
             </p>
-            <h4 style="color: #3252a8; font-weight: 600">Your Email</h4>
+            <h4 id="feed-item">Your Email</h4>
             <p>
               <textarea
                 type="email"
@@ -754,7 +772,7 @@
                 data-aos="zoom-in"
               ></textarea>
             </p>
-            <h4 style="color: #3252a8; font-weight: 600">Feedback</h4>
+            <h4 id="feed-item">Feedback</h4>
             <p>
               <textarea
                 name="Message"

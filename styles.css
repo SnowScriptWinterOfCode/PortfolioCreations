@@ -27,6 +27,82 @@ body {
   z-index: 1000;
 }
 
+/* -----Mode Switch--- */
+#slider {
+  width: 5rem;
+  height: 2.5rem;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  left: 3rem;
+  z-index: 50;
+  border-radius: 20px;
+  cursor: pointer;
+  background: #ebebeb;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+}
+
+#slider:after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  background: linear-gradient(180deg, #81afce, #3489db);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iswitch {
+  padding: 0px 0.5rem;
+  z-index: 101;
+}
+
+#light {
+  color: white;
+}
+
+#dark {
+  color: black;
+  opacity: 0.4;
+}
+
+input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + #slider {
+  background: #242424;
+}
+
+input:checked + #slider:after {
+  left: 12px;
+  transform: translateX(100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+#slider,
+#slider:after {
+  transition: 0.3s;
+}
+
+input:checked + label #light {
+  color: #7e7e7e;
+  opacity: 0.4;
+}
+
+input:checked + label #dark {
+  color: #fff;
+  opacity: 1;
+}
+
+/* Mode end */
+
 #uploadContainer {
   position: relative;
 }
@@ -168,6 +244,7 @@ input[type="file"] {
     skyblue
   ); /* Change the gradient colors as needed */
   border-radius: 0 !important;
+  padding: 50px 0;
 }
 
 .containerfaqs {
@@ -295,6 +372,12 @@ input[type="file"] {
   font-size: larger;
 }
 
+#faq-head {
+  text-decoration: underline;
+  text-decoration-color: #3252a8;
+  color: #3252a8;
+}
+
 .containerfaqs .tabss .contentfaqs {
   max-height: 0;
   transition: 0.5s;
@@ -386,6 +469,11 @@ input[type="file"] {
 
 .feedbacksssection button:hover {
   background-color: #1a2c5b;
+}
+
+#feed-item {
+  color: #3252a8;
+  font-weight: 600;
 }
 
 /* Message Styles */
@@ -626,6 +714,8 @@ input[type="file"] {
   }
 }
 
+/* ----------Home Section------------- */
+
 #home {
   background: linear-gradient(45deg, white 50%, #3498db);
   display: flex;
@@ -718,27 +808,29 @@ input[type="file"] {
   transform: translateY(-10%);
 }
 
+/* Home ends */
+
 /* ------------------About Me Section ----------------- */
 #about {
   background-color: #e0f7fa;
-  padding: 20px; 
+  padding: 20px;
 }
 
 #xp {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .vab-box {
-  flex: 0 0 calc(33.33% - 20px); 
   background-color: white;
   padding: 2rem;
   font-size: 1.3rem;
   text-align: center;
   border-radius: 1rem;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px; 
+  margin-bottom: 1.4rem;
 }
 
 .container {
@@ -746,8 +838,8 @@ input[type="file"] {
   flex-direction: column;
 }
 
-* {
-  box-sizing: border-box;
+.line {
+  display: flex;
 }
 
 .num-box {
@@ -758,12 +850,12 @@ input[type="file"] {
   content: "+";
 }
 
-@media (max-width: 767px) {
-  .vab-box {
-    flex: 0 0 100%; 
+@media screen and (max-width: 918px) {
+  #xp {
+    flex-direction: column;
+    justify-content: center;
   }
 }
-
 
 /* ----------------About Me Section Ends------------------- */
 
@@ -833,7 +925,6 @@ input[type="file"] {
   height: auto;
   width: 100%;
   box-sizing: border-box;
-  background-color: fff;
 }
 
 .project:hover {
@@ -856,8 +947,8 @@ input[type="file"] {
   }
 }
 
-@media screen and (max-width: 600px){
-  .project{
+@media screen and (max-width: 600px) {
+  .project {
     margin: 20px 0;
     max-width: calc(100% - 50px);
   }
@@ -940,16 +1031,6 @@ input[type="file"] {
   filter: brightness(90%);
 }
 
-/* FAQ section styling */
-.faqs {
-  background-color: #f5f5f5;
-  padding: 50px 0;
-  text-align: left;
-  /* Align content to the left */
-  border-radius: 15px;
-  /* Increase border-radius for the FAQ section */
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -994,16 +1075,6 @@ label:hover {
   cursor: pointer;
 }
 
-label::before {
-  content: "⏵";
-  font-size: 1.5rem;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  margin-right: 0.5rem;
-  transition: rotate 200ms 400ms ease-out;
-}
-
 div.faq-content {
   padding: 0 10px;
   width: 80%;
@@ -1018,8 +1089,6 @@ details:has(input:checked) label::before {
   rotate: 90deg;
   transition: rotate 200ms ease-out;
 }
-
-
 
 .scroll-up-btn {
   position: fixed;
@@ -1397,8 +1466,8 @@ h2 {
 }
 
 /* contact-item */
-.contact-item {
-  display: flex;
+.contact-items {
+  text-decoration: none;
 }
 
 /* Experience */
@@ -1533,10 +1602,6 @@ ul li:nth-child(odd) .circle {
 ul li:nth-child(even) .circle {
   left: -21px;
   transform: translate(-50%, -50%);
-}
-
-.contact-items {
-  text-decoration: none;
 }
 
 /* Media Queries  */
@@ -1821,4 +1886,11 @@ ul li:nth-child(even) .circle {
     transform-origin: center top;
     transform: scalex(1.3) scaley(0.7);
   }
+}
+
+/* Dark mode */
+
+.dark {
+  background-color: black;
+  color: white;
 }

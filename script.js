@@ -300,3 +300,26 @@ function changeContent() {
 window.addEventListener("load", () => {
   setInterval(changeContent, 7000);
 });
+
+// ------ Toggle Mode --------
+
+let modeBtn = document.getElementById("slider");
+
+function toggleMode() {
+  let theme = document.getElementById("theme");
+  const isLight = theme.getAttribute("href") === "styles.css";
+
+  if (isLight) {
+    theme.setAttribute("href", "dark.css");
+  } else {
+    theme.setAttribute("href", "styles.css");
+  }
+}
+
+modeBtn.addEventListener("click", () => {
+  toggleMode();
+  document.querySelector(".preloader").style.display = "";
+  setTimeout(function () {
+    document.querySelector(".preloader").style.display = "none";
+  }, 2000);
+});

@@ -39,7 +39,6 @@ body {
   bottom: 2rem;
   left: 3rem;
   z-index: 50;
-  /* border: 2px solid black; */
   border-radius: 20px;
   cursor: pointer;
   background: #ebebeb;
@@ -55,6 +54,20 @@ body {
   background: linear-gradient(180deg, #81afce, #3489db);
   border-radius: 180px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iswitch {
+  padding: 0px 0.5rem;
+  z-index: 101;
+}
+
+#light {
+  color: white;
+}
+
+#dark {
+  color: black;
+  opacity: 0.4;
 }
 
 input {
@@ -76,6 +89,16 @@ input:checked + #slider:after {
 #slider,
 #slider:after {
   transition: 0.3s;
+}
+
+input:checked + label #light {
+  color: #7e7e7e;
+  opacity: 0.4;
+}
+
+input:checked + label #dark {
+  color: #fff;
+  opacity: 1;
 }
 
 /* Mode end */

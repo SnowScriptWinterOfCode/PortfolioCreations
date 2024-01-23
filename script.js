@@ -303,13 +303,13 @@ window.addEventListener("load", () => {
 
 // ------ Toggle Mode --------
 
-// let modeBtn = document.getElementById("mode");
+let modeBtn = document.getElementById("slider");
 
-// function toggleMode() {
-//   let mode = document.body;
-//   mode.classList.toggle("dark");
-// }
+function toggleMode() {
+  let display = document.body;
+  display.classList.toggle("dark");
+}
 
-// modeBtn.addEventListener("click", () => {
-//   toggleMode();
-// });
+modeBtn.addEventListener("click", () => {
+  toggleMode();
+});

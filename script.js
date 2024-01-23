@@ -300,3 +300,16 @@ function changeContent() {
 window.addEventListener("load", () => {
   setInterval(changeContent, 7000);
 });
+
+// ------ Toggle Mode --------
+
+// let modeBtn = document.getElementById("mode");
+
+// function toggleMode() {
+//   let mode = document.body;
+//   mode.classList.toggle("dark");
+// }
+
+// modeBtn.addEventListener("click", () => {
+//   toggleMode();
+// });

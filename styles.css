@@ -244,6 +244,7 @@ input[type="file"] {
     skyblue
   ); /* Change the gradient colors as needed */
   border-radius: 0 !important;
+  padding: 50px 0;
 }
 
 .containerfaqs {
@@ -371,6 +372,12 @@ input[type="file"] {
   font-size: larger;
 }
 
+#faq-head {
+  text-decoration: underline;
+  text-decoration-color: #3252a8;
+  color: #3252a8;
+}
+
 .containerfaqs .tabss .contentfaqs {
   max-height: 0;
   transition: 0.5s;
@@ -462,6 +469,11 @@ input[type="file"] {
 
 .feedbacksssection button:hover {
   background-color: #1a2c5b;
+}
+
+#feed-item {
+  color: #3252a8;
+  font-weight: 600;
 }
 
 /* Message Styles */
@@ -702,6 +714,8 @@ input[type="file"] {
   }
 }
 
+/* ----------Home Section------------- */
+
 #home {
   background: linear-gradient(45deg, white 50%, #3498db);
   display: flex;
@@ -794,6 +808,8 @@ input[type="file"] {
   transform: translateY(-10%);
 }
 
+/* Home ends */
+
 /* ------------------About Me Section ----------------- */
 #about {
   background-color: #e0f7fa;
@@ -808,7 +824,6 @@ input[type="file"] {
 }
 
 .vab-box {
-  /* flex: 0 0 calc(33.33% - 20px); */
   background-color: white;
   padding: 2rem;
   font-size: 1.3rem;
@@ -821,10 +836,6 @@ input[type="file"] {
 .container {
   display: flex;
   flex-direction: column;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .line {
@@ -914,7 +925,6 @@ input[type="file"] {
   height: auto;
   width: 100%;
   box-sizing: border-box;
-  background-color: fff;
 }
 
 .project:hover {
@@ -1019,16 +1029,6 @@ input[type="file"] {
 
 .scroll-up-btn:hover {
   filter: brightness(90%);
-}
-
-/* FAQ section styling */
-.faqs {
-  background-color: #f5f5f5;
-  padding: 50px 0;
-  text-align: left;
-  /* Align content to the left */
-  border-radius: 15px;
-  /* Increase border-radius for the FAQ section */
 }
 
 .container {

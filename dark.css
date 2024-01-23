@@ -1,0 +1,196 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.preloader {
+  background-color: black;
+}
+
+.timeline::after {
+  background-color: #1c4966;
+}
+
+.contain::after {
+  background-color: black;
+  border-color: #1c4966;
+}
+
+.navbar-mainbg {
+  background-color: #003366;
+}
+
+#navbarSupportedContent ul li a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#navbarSupportedContent > ul > li.active > a {
+  color: whitesmoke;
+}
+
+.hori-selector {
+  background-color: black;
+}
+
+.hori-selector .rightSide,
+.hori-selector .leftSide {
+  background-color: black;
+}
+
+.hori-selector .rightSide:before,
+.hori-selector .leftSide:before {
+  background-color: #003366;
+}
+
+#home {
+  background: linear-gradient(45deg, black 50%, #003366);
+}
+
+#home span {
+  color: #00c9ff;
+}
+
+.icons i:hover {
+  color: #00c9ff;
+}
+
+.fab {
+  color: white;
+}
+
+.btn_resume {
+  background-color: #1c4966;
+  color: black;
+}
+
+.btn_resume a {
+  color: white;
+}
+
+.btn_resume:hover {
+  background-color: #2f83ba !important;
+}
+
+#about {
+  background-color: #00172c;
+}
+
+.vab-box {
+  background-color: black;
+}
+
+.skill-category h3 {
+  color: #3dceff;
+}
+
+.skill {
+  background-color: black;
+}
+
+.skill span {
+  color: #042bff;
+}
+
+.skills {
+  background-color: #00172c;
+}
+
+.skill i {
+  color: whitesmoke;
+}
+
+#projects {
+  background-color: #c5cfd6;
+}
+
+#project-heading h1 {
+  color: #0080ff;
+}
+
+#projects {
+  background-color: rgb(5, 0, 27);
+}
+
+.project {
+  background-color: black;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  background-color: #242323;
+}
+
+.project button a {
+  color: black;
+}
+
+.scroll-up-btn {
+  color: black;
+  background: #3785b9;
+}
+
+h2 {
+  color: #eff2f3;
+}
+
+.exp ul li p {
+  color: white;
+}
+
+.testimonial-section {
+  background-color: #01022a;
+}
+
+#c-img {
+  border-color: whitesmoke;
+}
+
+.faqs,
+.feedbacksssection {
+  background: linear-gradient(
+    45deg,
+    #061a40,
+    #0d3b66,
+    #061a40,
+    #0d3b66,
+    #061a40
+  );
+}
+
+.containerfaqs .tabss {
+  background-color: black;
+}
+
+.containerfaqs .tabss label {
+  background-color: black;
+}
+
+.containerfaqs .tabss:hover label::after {
+  color: whitesmoke;
+}
+
+#faq-head {
+  color: whitesmoke;
+  text-decoration-color: wheat;
+}
+
+.feedbacksssection h1 span {
+  color: whitesmoke;
+  text-decoration-color: wheat;
+}
+
+#feed-item {
+  color: wheat;
+}
+
+.footer-section {
+  background-color: black;
+}
+
+.cta-text h4 {
+  color: whitesmoke;
+}
+
+.copyright-area {
+  background-color: black;
+}

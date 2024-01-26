@@ -21,11 +21,12 @@ body {
 }
 
 #navbarSupportedContent ul li a {
-  color: rgba(0, 0, 0, 0.5);
+  color: #fffefe;
 }
 
 #navbarSupportedContent > ul > li.active > a {
-  color: whitesmoke;
+  color: #2f78a8;
+  font-weight: bold ;
 }
 
 .hori-selector {

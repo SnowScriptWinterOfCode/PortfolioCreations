@@ -234,7 +234,6 @@ input[type="file"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 110vh;
   background-color: #ffffff;
   border-radius: 0 !important;
   padding: 50px 0;
@@ -316,7 +315,6 @@ input[type="file"] {
 
 /************Feedback section starting********************/
 .feedbacksssection {
-  min-height: 100vh;
   background-color: #e0f7fa;
   border-radius: 0 !important;
   padding: 20px;
@@ -616,8 +614,8 @@ input[type="file"] {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  height: 100vh;
+  padding: 10.5rem 1.5rem;
+  /* height: 100vh; */
 }
 
 .text {
@@ -659,7 +657,7 @@ input[type="file"] {
   height: 85%;
   position: absolute;
   bottom: 0;
-  transform: translateX(-30%);
+  transform: translateX(-25%);
 }
 
 .icons {
@@ -744,7 +742,7 @@ input[type="file"] {
   content: "+";
 }
 
-@media screen and (max-width: 918px) {
+@media (max-width: 991px) {
   #xp {
     flex-direction: column;
     justify-content: center;
@@ -763,12 +761,6 @@ input[type="file"] {
 
 #edu {
   padding-top: 1.5rem;
-}
-
-@media screen and (max-width: 918px) {
-  .images {
-    display: none;
-  }
 }
 
 /* Projects */
@@ -827,7 +819,7 @@ input[type="file"] {
   transition: transform background-color 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 918px) {
+@media (max-width: 991px) {
   .box {
     display: flex;
     justify-content: space-around;
@@ -1333,7 +1325,6 @@ h2 {
 
 #c-desc {
   width: 35%;
-  text-align: justify;
   font-size: 1.2rem;
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
@@ -1780,8 +1771,28 @@ ul li:nth-child(even) .circle {
   }
 }
 
-@media screen and (max-width: 979px) {
+@media (max-width: 991px) {
   .skill-item {
     width: 100%;
+  }
+  .certified {
+    flex-direction: column;
+    padding: 0px;
+  }
+  #c-desc {
+    width: 100%;
+    padding: 3rem;
+  }
+  .text {
+    width: 140%;
+  }
+  .circle-bar {
+    left: 13.5rem;
+  }
+  .project {
+    max-width: 100%;
+  }
+  .images {
+    display: none;
   }
 }

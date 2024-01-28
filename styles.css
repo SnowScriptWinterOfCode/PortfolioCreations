@@ -1780,9 +1780,8 @@ ul li:nth-child(even) .circle {
   }
 }
 
-/* Dark mode */
-
-.dark {
-  background-color: black;
-  color: white;
+@media screen and (max-width: 979px) {
+  .skill-item {
+    width: 100%;
+  }
 }
